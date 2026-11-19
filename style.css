@@ -160,6 +160,8 @@ button, a { font-family: inherit; }
   border-radius: var(--radius);
 }
 .card.flipped .flip { transform: rotateY(180deg); }
+/* 뒷면은 세로 스크롤·빈 곳 탭을 받아야 하므로 카드의 touch-action을 풀어 준다 */
+.card.flipped { touch-action: pan-y; cursor: default; }
 
 .face {
   position: absolute;
@@ -429,6 +431,7 @@ button, a { font-family: inherit; }
   padding: 16px 16px 18px;
   overscroll-behavior: contain;
 }
+.back-hint { margin-top: 14px; }
 .back-head {
   display: flex;
   align-items: flex-start;

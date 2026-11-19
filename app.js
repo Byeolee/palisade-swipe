@@ -391,15 +391,33 @@
     if (!card) return;
     let drag = null;
 
+    const TAP_MS = 400;   // 이 시간 안에 손을 떼야 '탭'으로 본다
+    const TAP_SLOP = 9;   // 이 거리(px) 이상 움직이면 스크롤·드래그로 본다
+
     const stamps = () => ({
       like: card.querySelector('.like-stamp'),
       pass: card.querySelector('.pass-stamp'),
     });
 
+    const flipToBack = () => {
+      card.classList.add('flipped');
+      flippedId = item.id;
+    };
+    const flipToFront = () => {
+      card.classList.remove('flipped');
+      flippedId = null;
+    };
+
     card.addEventListener('pointerdown', (e) => {
-      if (card.classList.contains('flipped')) return;
       if (e.target.closest('a, button')) return;
-      drag = { x: e.clientX, y: e.clientY, t: Date.now(), moved: false, id: e.pointerId };
+
+      if (card.classList.contains('flipped')) {
+        // 뒷면: 짧은 탭이면 앞면 복귀. 세로 스크롤은 건드리지 않는다.
+        drag = { x: e.clientX, y: e.clientY, t: Date.now(), moved: false, id: e.pointerId, back: true };
+        return;
+      }
+
+      drag = { x: e.clientX, y: e.clientY, t: Date.now(), moved: false, id: e.pointerId, back: false };
       try { card.setPointerCapture(e.pointerId); } catch (_) {}
     });
 
@@ -407,6 +425,12 @@
       if (!drag || drag.id !== e.pointerId) return;
       const dx = e.clientX - drag.x;
       const dy = e.clientY - drag.y;
+
+      if (drag.back) {
+        if (!drag.moved && (Math.abs(dx) > TAP_SLOP || Math.abs(dy) > TAP_SLOP)) drag.moved = true;
+        return; // 스크롤을 막지 않는다
+      }
+
       if (!drag.moved && Math.hypot(dx, dy) > 7) drag.moved = true;
       if (!drag.moved) return;
       card.style.transform = `translate(${dx}px, ${dy * 0.28}px) rotate(${(dx / 24).toFixed(2)}deg)`;
@@ -423,13 +447,19 @@
       const dy = e.clientY - drag.y;
       const dt = Date.now() - drag.t;
       const moved = drag.moved;
+      const fromBack = drag.back;
       drag = null;
 
-      if (!moved) {
-        if (dt < 400) {
-          card.classList.add('flipped');
-          flippedId = item.id;
+      if (fromBack) {
+        // 움직였으면(스크롤) 또는 길게 눌렀으면 앞면으로 돌리지 않는다
+        if (!moved && Math.abs(dx) <= TAP_SLOP && Math.abs(dy) <= TAP_SLOP && dt < TAP_MS) {
+          flipToFront();
         }
+        return;
+      }
+
+      if (!moved) {
+        if (dt < TAP_MS) flipToBack();
         return;
       }
       if (Math.abs(dx) > 88) {
@@ -445,9 +475,11 @@
 
     card.addEventListener('pointerup', end);
     card.addEventListener('pointercancel', () => {
-      // 네이티브 이미지 드래그 등으로 취소되면 스와이프로 처리하지 않고 제자리로
+      // 네이티브 이미지 드래그·스크롤 등으로 취소되면 스와이프로 처리하지 않고 제자리로
       if (!drag) return;
+      const fromBack = drag.back;
       drag = null;
+      if (fromBack) return;
       card.style.transition = 'transform .2s ease-out';
       card.style.transform = '';
       const s = stamps();
