@@ -78,6 +78,8 @@ button, a { font-family: inherit; }
   padding: 2px 2px 8px;
   scrollbar-width: none;
   -webkit-overflow-scrolling: touch;
+  -webkit-mask-image: linear-gradient(to right, #000 94%, transparent 100%);
+  mask-image: linear-gradient(to right, #000 94%, transparent 100%);
 }
 .chips::-webkit-scrollbar { display: none; }
 .chip {
@@ -613,6 +615,7 @@ button, a { font-family: inherit; }
   font-size: 10px;
   font-weight: 800;
 }
+.pill.zero { background: #2c3341; color: #8e99aa; }
 
 /* ── empty ──────────────────────────────── */
 .empty {
@@ -726,6 +729,7 @@ button, a { font-family: inherit; }
 
 .compare-wrap {
   overflow-x: auto;
+  scrollbar-width: none;
   -webkit-overflow-scrolling: touch;
   border: 1px solid var(--line);
   border-radius: 13px;

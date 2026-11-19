@@ -126,7 +126,19 @@
   }
 
   function renderLikesPill() {
-    el.likeCount.textContent = Object.keys(state.likes).length;
+    const n = Object.keys(state.likes).length;
+    el.likeCount.textContent = n;
+    el.likeCount.classList.toggle('zero', n === 0);
+  }
+
+  function historyLabel(x) {
+    const n = x.note || '';
+    const other = n.match(/대물\s*([\d,]+)\s*건/);
+    if (other) return `대물 ${other[1]}건`;
+    if (/단순\s*수리/.test(n)) return '단순수리';
+    if (/무사고/.test(n)) return '무사고';
+    if (/렌트/.test(n)) return '렌트 이력';
+    return '비고 참고';
   }
 
   function renderDeck() {
@@ -265,7 +277,7 @@
       ['신차가', x.listPrice ? `${won(x.listPrice)}만` : '–'],
       ['감가', x.depreciation != null ? `${x.depreciation.toFixed(1)}%` : '–'],
       ['판매처', x.source === 'kcar' ? '케이카 직영' : '엔카'],
-      ['비고', x.note ? '아래 참고' : '–'],
+      ['사고·이력', historyLabel(x)],
     ].map(([k, v]) => `<dt>${k}</dt><dd>${v}</dd>`).join('');
 
     q('.opt-list').innerHTML = Object.keys(OPT_LABEL).map((k) => {
