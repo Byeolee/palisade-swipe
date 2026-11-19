@@ -72,5 +72,12 @@ git add data.json && git commit -m "data: $(date +%m/%d) 모니터링 반영" &&
 ```
 
 `tools/update_data.py`는 `gog`(byungkun3@gmail.com)로 시트를 읽고, 판매중 매물의 엔카/케이카
-상세를 조회해 `data.json`을 다시 씁니다. 상세 응답은 `.cache/`에 캐시합니다.
+상세를 조회해 `data.json`을 다시 씁니다. 상세 응답은 `.cache/`(git 제외)에 6시간 캐시합니다.
 GitHub Pages는 `main` 브랜치 루트를 그대로 서빙하므로 푸시 후 1분 안에 반영됩니다.
+
+- 캐시가 비어 있으면 엔카 상세 30건을 재시도(2.5초 간격, 성공률 40~60%)로 받아오므로 첫 실행은 5~10분 걸릴 수 있습니다.
+- 케이카 상세는 `pycryptodome`이 필요합니다(캐시가 있으면 임포트하지 않음).
+- 커밋·푸시는 스크립트가 직접 합니다. `--no-push`로 파일만 갱신할 수 있습니다.
+- **CSS/JS를 고칠 때는 `index.html`의 `?v=...` 값을 함께 올려 주세요.** GitHub Pages가 자산을
+  10분간 캐시하므로, 값을 올리지 않으면 사용자가 예전 화면을 보게 됩니다. `data.json`은
+  `cache: 'no-store'`로 매번 새로 받습니다.
