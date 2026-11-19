@@ -189,10 +189,24 @@
       img.alt = `${x.trim} ${x.drive}`;
       img.addEventListener('error', () => photoFallback(img), { once: true });
       img.addEventListener('load', () => { q('.photo-fallback').hidden = true; }, { once: true });
+      if (x.photos.length > 1) {
+        const strip = document.createElement('div');
+        strip.className = 'thumbs';
+        strip.innerHTML = x.photos.slice(0, 4).map((u, i) =>
+          `<img src="${u}" alt="" class="${i === 0 ? 'on' : ''}" loading="lazy">`).join('');
+        strip.addEventListener('pointerdown', (e) => e.stopPropagation());
+        strip.addEventListener('click', (e) => {
+          const t = e.target.closest('img');
+          if (!t) return;
+          e.stopPropagation();
+          img.src = t.src;
+          strip.querySelectorAll('img').forEach((n) => n.classList.toggle('on', n === t));
+        });
+        q('.photo').appendChild(strip);
+      }
     } else {
       photoFallback(img);
     }
-    if (x.photos && x.photos.length > 1) q('.photo-count').textContent = `사진 ${x.photos.length}`;
 
     // badges
     const badges = [];
@@ -331,8 +345,10 @@
       `<circle class="dot ${i === pts.length - 1 ? 'cur' : ''}" cx="${pt.x.toFixed(1)}" cy="${pt.y.toFixed(1)}" r="${i === pts.length - 1 ? 4 : 3}"/>`).join('');
 
     const delta = cur - first;
+    const changes = hist.length - 1;
     const cls = delta < 0 ? 'down' : (delta > 0 ? 'up' : 'flat');
-    const deltaText = delta === 0 ? '변동 없음'
+    const deltaText = delta === 0
+      ? `±0 · ${changes}회 변동`
       : `${delta < 0 ? '▼' : '▲'} ${won(Math.abs(delta))}만 (${delta < 0 ? '-' : '+'}${Math.abs(delta)})`;
 
     const last = hist[hist.length - 1];
