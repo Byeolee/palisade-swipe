@@ -349,7 +349,7 @@
     const cls = delta < 0 ? 'down' : (delta > 0 ? 'up' : 'flat');
     const deltaText = delta === 0
       ? `±0 · ${changes}회 변동`
-      : `${delta < 0 ? '▼' : '▲'} ${won(Math.abs(delta))}만 (${delta < 0 ? '-' : '+'}${Math.abs(delta)})`;
+      : `${delta < 0 ? '▼' : '▲'} ${won(Math.abs(delta))}만`;
 
     const last = hist[hist.length - 1];
     const note = `${mmdd(first && hist[0].date)} ${won(first)}만 → ${mmdd(last.date)} ${won(cur)}만 · 변동 ${hist.length - 1}회`;
@@ -473,11 +473,6 @@
     if (busy) return;
     const card = el.deck.querySelector('.card.top');
     if (!card) return;
-    if (card.classList.contains('flipped')) {
-      card.classList.remove('flipped');
-      flippedId = null;
-      return;
-    }
     fly(card, action === 'like' ? 'right' : 'left', action);
   }
 
