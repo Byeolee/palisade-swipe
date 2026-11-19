@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1, user-scalable=no" />
+<meta name="theme-color" content="#0b0d12" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-mobile-web-app-title" content="팰리세이드 스와이프" />
+<meta name="description" content="디 올 뉴 팰리세이드 HEV 중고 매물을 틴더처럼 넘겨보는 카드 뷰" />
+<title>팰리세이드 HEV 매물 스와이프</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div id="app">
+
+  <header class="top">
+    <div class="brand">
+      <h1>팰리세이드 <span>HEV</span></h1>
+      <p class="sub" id="updated">매물 트래커</p>
+    </div>
+    <div class="counter">
+      <b id="remaining">–</b>
+      <span>대 남음</span>
+    </div>
+  </header>
+
+  <nav class="chips" id="chips" aria-label="필터"></nav>
+  <p class="deckline" id="deckline"></p>
+
+  <main class="stage" id="stage">
+    <div class="deck" id="deck"></div>
+
+    <div class="empty" id="empty" hidden>
+      <div class="empty-icon">🚗</div>
+      <h2 id="emptyTitle">다 봤어요</h2>
+      <p id="emptyText">이 필터에서 남은 카드가 없습니다.</p>
+      <div class="empty-actions">
+        <button class="ghost" id="emptyUndo">↩ 되돌리기</button>
+        <button class="ghost" id="emptyReset">필터 초기화</button>
+        <button class="ghost" id="emptyClearPass" hidden>패스 지우기</button>
+      </div>
+    </div>
+  </main>
+
+  <div class="actions" id="actions">
+    <button class="act undo" id="btnUndo" aria-label="되돌리기">↩</button>
+    <button class="act pass" id="btnPass" aria-label="패스">✕</button>
+    <button class="act like" id="btnLike" aria-label="찜">♥</button>
+  </div>
+
+  <nav class="tabbar">
+    <button class="tab active" data-tab="deck"><span>🃏</span>카드</button>
+    <button class="tab" data-tab="likes"><span>♥</span>찜 목록<b class="pill" id="likeCount">0</b></button>
+  </nav>
+
+</div>
+
+<section class="likes-view" id="likesView" hidden>
+  <header class="lv-head">
+    <h2>찜한 매물 <b id="lvCount">0</b></h2>
+    <div class="lv-tools">
+      <button class="mini" id="lvCompareToggle">비교표</button>
+      <button class="mini danger" id="lvClear">전체 해제</button>
+    </div>
+  </header>
+  <div id="lvCompare" class="compare-wrap" hidden></div>
+  <div id="lvList" class="likes-list"></div>
+  <div class="lv-empty" id="lvEmpty" hidden>
+    <p>아직 찜한 매물이 없어요.</p>
+    <p class="dim">카드를 오른쪽으로 밀거나 ♥ 를 누르면 여기에 모입니다.</p>
+  </div>
+  <button class="back-to-deck" id="lvBack">← 카드로 돌아가기</button>
+</section>
+
+<template id="tpl-card">
+  <article class="card">
+    <div class="swipe-stamp like-stamp">찜</div>
+    <div class="swipe-stamp pass-stamp">패스</div>
+    <div class="flip">
+      <div class="face front">
+        <div class="photo">
+          <div class="photo-fallback" hidden>
+            <svg viewBox="0 0 120 60" aria-hidden="true"><path d="M12 42h96M22 42c0-4 3-7 7-7s7 3 7 7M84 42c0-4 3-7 7-7s7 3 7 7" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M18 42v-8l10-12h44l12 12h16a4 4 0 0 1 4 4v4" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>사진 준비 중</span>
+          </div>
+          <img class="car-img" alt="" loading="lazy" />
+          <div class="badges"></div>
+          <div class="src-badge"></div>
+          <div class="photo-count"></div>
+        </div>
+        <div class="body">
+          <div class="row-title">
+            <h3 class="trim"></h3>
+            <span class="drive"></span>
+          </div>
+          <div class="price-row">
+            <strong class="price"></strong>
+            <span class="dep"></span>
+          </div>
+          <ul class="spec-line"></ul>
+          <ul class="opt-badges"></ul>
+          <p class="hint">탭해서 상세 · 오른쪽 밀면 찜</p>
+        </div>
+      </div>
+
+      <div class="face back">
+        <div class="back-scroll">
+          <div class="back-head">
+            <div>
+              <h3 class="b-trim"></h3>
+              <p class="b-sub"></p>
+            </div>
+            <div class="b-price"></div>
+          </div>
+
+          <section class="chart-box">
+            <div class="chart-head">
+              <h4>가격 변동</h4>
+              <span class="chart-delta"></span>
+            </div>
+            <div class="chart"></div>
+            <p class="chart-note"></p>
+          </section>
+
+          <section class="spec-box">
+            <h4>상세 스펙</h4>
+            <dl class="spec-grid"></dl>
+          </section>
+
+          <section class="opt-box">
+            <h4>옵션</h4>
+            <ul class="opt-list"></ul>
+          </section>
+
+          <section class="note-box">
+            <h4>시트 비고</h4>
+            <p class="note"></p>
+          </section>
+
+          <div class="back-actions">
+            <a class="link-btn" target="_blank" rel="noopener">원문 보기 ↗</a>
+            <button class="front-btn">앞면 보기</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+</template>
+
+<script src="app.js"></script>
+</body>
+</html>
