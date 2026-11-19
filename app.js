@@ -187,6 +187,7 @@
     if (x.photos && x.photos[0]) {
       img.src = x.photos[0];
       img.alt = `${x.trim} ${x.drive}`;
+      img.draggable = false;
       img.addEventListener('error', () => photoFallback(img), { once: true });
       img.addEventListener('load', () => { q('.photo-fallback').hidden = true; }, { once: true });
       if (x.photos.length > 1) {
@@ -431,7 +432,16 @@
     };
 
     card.addEventListener('pointerup', end);
-    card.addEventListener('pointercancel', end);
+    card.addEventListener('pointercancel', () => {
+      // 네이티브 이미지 드래그 등으로 취소되면 스와이프로 처리하지 않고 제자리로
+      if (!drag) return;
+      drag = null;
+      card.style.transition = 'transform .2s ease-out';
+      card.style.transform = '';
+      const s = stamps();
+      s.like.style.opacity = 0; s.pass.style.opacity = 0;
+      setTimeout(() => { card.style.transition = ''; }, 220);
+    });
   }
 
   function fly(card, dir, action) {

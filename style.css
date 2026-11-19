@@ -219,6 +219,9 @@ button, a { font-family: inherit; }
   object-fit: cover;
   display: block;
   background: #12161f;
+  -webkit-user-drag: none;
+  user-select: none;
+  pointer-events: none;
 }
 .photo-fallback {
   position: absolute;
@@ -291,6 +294,8 @@ button, a { font-family: inherit; }
   gap: 5px;
 }
 .thumbs img {
+  -webkit-user-drag: none;
+  user-select: none;
   width: 36px;
   height: 27px;
   border-radius: 6px;
