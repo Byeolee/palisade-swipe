@@ -63,16 +63,19 @@ def read_sheet(sheet_json=None):
     env = json.loads(raw)
     data = env.get('data', env)
     values = data.get('values')
-    if isinstance(values, dict) and 'items' in values:
+    if isinstance(values, dict) and 'items' in values and not isinstance(values['items'], int):
         values = values['items']
-    if (values is None or (isinstance(values, dict) and values.get('omitted'))) \
+    if (values is None or (isinstance(values, dict) and values.get('omitted'))
+            or isinstance(values, int)) \
             and data.get('saved_to'):
         saved = data['saved_to']
         saved = saved if os.path.isabs(saved) else os.path.join('/workspace', saved)
         env2 = json.load(open(saved))
         values = env2['data']['values']
-        if isinstance(values, dict) and 'items' in values:
+        if isinstance(values, dict) and 'items' in values and not isinstance(values['items'], int):
             values = values['items']
+        elif isinstance(values, dict):
+            raise SystemExit('시트 값 형식을 읽지 못했습니다.')
     if not values:
         raise SystemExit('시트 값이 비어 있습니다.')
     return [[strip_markers(c) for c in row] for row in values]
