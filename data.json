@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-11-20T09:40",
+ "generatedAt": "2026-11-20T17:44",
  "source": "구글 시트 \"팰리세이드 HEV 중고 매매 트래커\" + 엔카/케이카 상세 API",
- "count": 38,
+ "count": 40,
  "listings": [
   {
    "id": "42590738",
@@ -547,6 +547,66 @@
    "isNew": false
   },
   {
+   "id": "42376100",
+   "source": "encar",
+   "trim": "캘리그래피",
+   "title": "팰리세이드(LX3) HEV 2.5T 캘리그래피",
+   "drive": "2WD",
+   "seats": "9인승",
+   "sunroof": false,
+   "yearMonth": "25/11",
+   "km": 3670,
+   "color": "쥐색",
+   "region": "충북 청주",
+   "price": 4980,
+   "firstPrice": 5490,
+   "registered": "2026-11-19",
+   "status": "판매중",
+   "note": "25/11식 3,670km 준신차급, 어라운드뷰·HUD·2열통풍·마사지 O, 선루프·전자서스 X, 최초등록 11/18 01:08 (11/19 시트 신규 추가 / 11/19 19:21 5,490→5,350만 140만 인하 / 11/20 14:06 5,350→4,980만 370만 추가 인하)",
+   "url": "https://fem.encar.com/cars/detail/42376100",
+   "photos": [
+    "https://ci.encar.com/carpicture/carpicture07/pic4237/42376100_001.jpg",
+    "https://ci.encar.com/carpicture/carpicture07/pic4237/42376100_002.jpg",
+    "https://ci.encar.com/carpicture/carpicture07/pic4237/42376100_003.jpg",
+    "https://ci.encar.com/carpicture/carpicture07/pic4237/42376100_004.jpg",
+    "https://ci.encar.com/carpicture/carpicture07/pic4237/42376100_005.jpg"
+   ],
+   "options": {
+    "sunroof": false,
+    "aroundView": true,
+    "hud": true,
+    "ecs": false,
+    "vent2": true,
+    "massage": true
+   },
+   "listPrice": 6186,
+   "registeredAd": "2026-11-18T01:08:09",
+   "dealer": "충북 청주시 청원구",
+   "depreciation": 19.5,
+   "priceHistory": [
+    {
+     "date": "2026-11-19",
+     "time": "19:21",
+     "price": 5490
+    },
+    {
+     "date": "2026-11-19",
+     "time": "19:21",
+     "price": 5350
+    },
+    {
+     "date": "2026-11-20",
+     "time": "14:06",
+     "price": 4980
+    }
+   ],
+   "change": {
+    "delta": -370,
+    "lastDate": "2026-11-20"
+   },
+   "isNew": true
+  },
+  {
    "id": "42642220",
    "source": "encar",
    "trim": "프레스티지",
@@ -1027,61 +1087,6 @@
    "isNew": true
   },
   {
-   "id": "42376100",
-   "source": "encar",
-   "trim": "캘리그래피",
-   "title": "팰리세이드(LX3) HEV 2.5T 캘리그래피",
-   "drive": "2WD",
-   "seats": "9인승",
-   "sunroof": false,
-   "yearMonth": "25/11",
-   "km": 3670,
-   "color": "쥐색",
-   "region": "충북 청주",
-   "price": 5350,
-   "firstPrice": 5490,
-   "registered": "2026-11-19",
-   "status": "판매중",
-   "note": "25/11식 3,670km 준신차급, 어라운드뷰·HUD·2열통풍·마사지 O, 선루프·전자서스 X, 최초등록 11/18 01:08 (11/19 시트 신규 추가 / 11/19 19:21 5,490→5,350만 140만 인하)",
-   "url": "https://fem.encar.com/cars/detail/42376100",
-   "photos": [
-    "https://ci.encar.com/carpicture/carpicture07/pic4237/42376100_001.jpg",
-    "https://ci.encar.com/carpicture/carpicture07/pic4237/42376100_002.jpg",
-    "https://ci.encar.com/carpicture/carpicture07/pic4237/42376100_003.jpg",
-    "https://ci.encar.com/carpicture/carpicture07/pic4237/42376100_004.jpg",
-    "https://ci.encar.com/carpicture/carpicture07/pic4237/42376100_005.jpg"
-   ],
-   "options": {
-    "sunroof": false,
-    "aroundView": true,
-    "hud": true,
-    "ecs": false,
-    "vent2": true,
-    "massage": true
-   },
-   "listPrice": 6186,
-   "registeredAd": "2026-11-18T01:08:09",
-   "dealer": "충북 청주시 청원구",
-   "depreciation": 13.5,
-   "priceHistory": [
-    {
-     "date": "2026-11-19",
-     "time": "19:21",
-     "price": 5490
-    },
-    {
-     "date": "2026-11-19",
-     "time": "19:21",
-     "price": 5350
-    }
-   ],
-   "change": {
-    "delta": -140,
-    "lastDate": "2026-11-19"
-   },
-   "isNew": true
-  },
-  {
    "id": "EC61433905",
    "source": "kcar",
    "trim": "캘리그래피",
@@ -1321,6 +1326,53 @@
    "isNew": false
   },
   {
+   "id": "43177491",
+   "source": "encar",
+   "trim": "캘리그래피",
+   "title": "팰리세이드(LX3) HEV 2.5T 캘리그래피",
+   "drive": "2WD",
+   "seats": "9인승",
+   "sunroof": false,
+   "yearMonth": "26/05",
+   "km": 2079,
+   "color": "검정색",
+   "region": "대전 유성",
+   "price": 5500,
+   "firstPrice": 5500,
+   "registered": "2026-11-20",
+   "status": "판매중",
+   "note": "26/05식 2,079km 준신차 2WD 캘리, 어라운드뷰·HUD·2열통풍·마사지 O, 전자서스·선루프 X, 최초등록 11/19 10:21 — 17행(5,250만·25/07·9,058km·전자서스O)보다 250만 높지만 연식 10개월·주행 7,000km 적음 (11/20 17시 발굴)",
+   "url": "https://fem.encar.com/cars/detail/43177491",
+   "photos": [
+    "https://ci.encar.com/carpicture/carpicture07/pic4317/43177491_001.jpg",
+    "https://ci.encar.com/carpicture/carpicture07/pic4317/43177491_002.jpg",
+    "https://ci.encar.com/carpicture/carpicture07/pic4317/43177491_003.jpg",
+    "https://ci.encar.com/carpicture/carpicture07/pic4317/43177491_004.jpg",
+    "https://ci.encar.com/carpicture/carpicture07/pic4317/43177491_005.jpg"
+   ],
+   "options": {
+    "sunroof": false,
+    "aroundView": true,
+    "hud": true,
+    "ecs": false,
+    "vent2": true,
+    "massage": true
+   },
+   "listPrice": 6186,
+   "registeredAd": "2026-11-19T10:21:59",
+   "dealer": "대전 유성구",
+   "depreciation": 11.1,
+   "priceHistory": [
+    {
+     "date": "2026-11-20",
+     "time": null,
+     "price": 5500
+    }
+   ],
+   "change": null,
+   "isNew": true
+  },
+  {
    "id": "EC61431144",
    "source": "kcar",
    "trim": "캘리그래피",
@@ -1379,6 +1431,61 @@
     "lastDate": "2026-11-18"
    },
    "isNew": true
+  },
+  {
+   "id": "43115328",
+   "source": "encar",
+   "trim": "캘리그래피",
+   "title": "팰리세이드(LX3) HEV 2.5T 캘리그래피",
+   "drive": "4WD",
+   "seats": "9인승",
+   "sunroof": true,
+   "yearMonth": "25/09",
+   "km": 13984,
+   "color": "블랙",
+   "region": "경기 수원",
+   "price": 5580,
+   "firstPrice": 5620,
+   "registered": "2026-11-14",
+   "status": "판매중",
+   "note": "엔카진단++, 무사고, 보험이력0원, 전자제어서스펜션+선루프+빌트인캠+브라운시트 (11/14 신규 추가 / 11/20 14:26 5,620→5,580만 40만 인하)",
+   "url": "https://fem.encar.com/cars/detail/43115328",
+   "photos": [
+    "https://ci.encar.com/carpicture/carpicture01/pic4311/43115328_002.jpg",
+    "https://ci.encar.com/carpicture/carpicture01/pic4311/43115328_003.jpg",
+    "https://ci.encar.com/carpicture/carpicture01/pic4311/43115328_004.jpg",
+    "https://ci.encar.com/carpicture/carpicture01/pic4311/43115328_005.jpg",
+    "https://ci.encar.com/carpicture/carpicture01/pic4311/43115328_006.jpg"
+   ],
+   "options": {
+    "sunroof": true,
+    "aroundView": true,
+    "hud": true,
+    "ecs": true,
+    "vent2": true,
+    "massage": true
+   },
+   "listPrice": 6414,
+   "registeredAd": "2026-11-09T11:26:34",
+   "dealer": "경기 수원시 권선구",
+   "depreciation": 13.0,
+   "priceHistory": [
+    {
+     "date": "2026-11-14",
+     "time": null,
+     "price": 5620
+    },
+    {
+     "date": "2026-11-20",
+     "time": "14:26",
+     "price": 5580
+    }
+   ],
+   "change": {
+    "delta": -40,
+    "lastDate": "2026-11-20"
+   },
+   "isNew": false
   },
   {
    "id": "43188837",
@@ -1522,53 +1629,6 @@
    "isNew": true
   },
   {
-   "id": "43115328",
-   "source": "encar",
-   "trim": "캘리그래피",
-   "title": "팰리세이드(LX3) HEV 2.5T 캘리그래피",
-   "drive": "4WD",
-   "seats": "9인승",
-   "sunroof": true,
-   "yearMonth": "25/09",
-   "km": 13984,
-   "color": "블랙",
-   "region": "경기 수원",
-   "price": 5620,
-   "firstPrice": 5620,
-   "registered": "2026-11-14",
-   "status": "판매중",
-   "note": "엔카진단++, 무사고, 보험이력0원, 전자제어서스펜션+선루프+빌트인캠+브라운시트 (11/14 신규 추가)",
-   "url": "https://fem.encar.com/cars/detail/43115328",
-   "photos": [
-    "https://ci.encar.com/carpicture/carpicture01/pic4311/43115328_002.jpg",
-    "https://ci.encar.com/carpicture/carpicture01/pic4311/43115328_003.jpg",
-    "https://ci.encar.com/carpicture/carpicture01/pic4311/43115328_004.jpg",
-    "https://ci.encar.com/carpicture/carpicture01/pic4311/43115328_005.jpg",
-    "https://ci.encar.com/carpicture/carpicture01/pic4311/43115328_006.jpg"
-   ],
-   "options": {
-    "sunroof": true,
-    "aroundView": true,
-    "hud": true,
-    "ecs": true,
-    "vent2": true,
-    "massage": true
-   },
-   "listPrice": 6414,
-   "registeredAd": "2026-11-09T11:26:34",
-   "dealer": "경기 수원시 권선구",
-   "depreciation": 12.4,
-   "priceHistory": [
-    {
-     "date": "2026-11-14",
-     "time": null,
-     "price": 5620
-    }
-   ],
-   "change": null,
-   "isNew": false
-  },
-  {
    "id": "43187014",
    "source": "encar",
    "trim": "캘리그래피",
@@ -1707,6 +1767,53 @@
    "priceHistory": [
     {
      "date": "2026-11-18",
+     "time": null,
+     "price": 5650
+    }
+   ],
+   "change": null,
+   "isNew": true
+  },
+  {
+   "id": "43188716",
+   "source": "encar",
+   "trim": "캘리그래피",
+   "title": "팰리세이드(LX3) HEV 2.5T 캘리그래피",
+   "drive": "2WD",
+   "seats": "9인승",
+   "sunroof": false,
+   "yearMonth": "26/06",
+   "km": 954,
+   "color": "흰색",
+   "region": "전남광주",
+   "price": 5650,
+   "firstPrice": 5650,
+   "registered": "2026-11-20",
+   "status": "판매중",
+   "note": "26/06식 954km 사실상 신차급 2WD 캘리, 어라운드뷰·전자서스·HUD·2열통풍·마사지 O, 선루프 X, 최초등록 11/20 13:49 — 39행(5,950만·26/08·2,630km)보다 300만 저렴, 41행(5,590만·25/11·19,693km)보다 연식 최신 (11/20 17시 발굴)",
+   "url": "https://fem.encar.com/cars/detail/43188716",
+   "photos": [
+    "https://ci.encar.com/carpicture/carpicture08/pic4318/43188716_001.jpg",
+    "https://ci.encar.com/carpicture/carpicture08/pic4318/43188716_002.jpg",
+    "https://ci.encar.com/carpicture/carpicture08/pic4318/43188716_003.jpg",
+    "https://ci.encar.com/carpicture/carpicture08/pic4318/43188716_004.jpg",
+    "https://ci.encar.com/carpicture/carpicture08/pic4318/43188716_005.jpg"
+   ],
+   "options": {
+    "sunroof": false,
+    "aroundView": true,
+    "hud": true,
+    "ecs": true,
+    "vent2": true,
+    "massage": true
+   },
+   "listPrice": 6186,
+   "registeredAd": "2026-11-20T13:49:24",
+   "dealer": "전남광주 서구 회재유통길 78",
+   "depreciation": 8.7,
+   "priceHistory": [
+    {
+     "date": "2026-11-20",
      "time": null,
      "price": 5650
     }
