@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-11-20T17:44",
+ "generatedAt": "2026-11-21T09:55",
  "source": "구글 시트 \"팰리세이드 HEV 중고 매매 트래커\" + 엔카/케이카 상세 API",
- "count": 40,
+ "count": 41,
  "listings": [
   {
    "id": "42590738",
@@ -15,11 +15,11 @@
    "km": 41378,
    "color": "자주색",
    "region": "경기",
-   "price": 4400,
+   "price": 4390,
    "firstPrice": 4470,
    "registered": "2026-11-03",
    "status": "판매중",
-   "note": "가성비 원픽 전국최저가, 키로수 감가 극대화, 서라운드뷰 (11/5 4,450만→11/12 4,440만→11/18 4,400만 40만 추가 인하, 기존 4,470만원)",
+   "note": "가성비 원픽 전국최저가, 키로수 감가 극대화, 서라운드뷰 (11/5 4,450만→11/12 4,440만→11/18 4,400만 40만 추가 인하, 기존 4,470만원) (11/21 09시 4,390만 10만 추가 인하, 기존 4,400만원)",
    "url": "https://fem.encar.com/cars/detail/42590738",
    "photos": [
     "https://ci.encar.com/carpicture/carpicture09/pic4259/42590450_001.jpg",
@@ -39,7 +39,7 @@
    "listPrice": 5536,
    "registeredAd": "2026-10-21T21:22:02",
    "dealer": "경기 부천시",
-   "depreciation": 20.5,
+   "depreciation": 20.7,
    "priceHistory": [
     {
      "date": "2026-11-03",
@@ -60,11 +60,16 @@
      "date": "2026-11-18",
      "time": null,
      "price": 4400
+    },
+    {
+     "date": "2026-11-21",
+     "time": null,
+     "price": 4390
     }
    ],
    "change": {
-    "delta": -40,
-    "lastDate": "2026-11-18"
+    "delta": -10,
+    "lastDate": "2026-11-21"
    },
    "isNew": false
   },
@@ -267,7 +272,7 @@
     }
    ],
    "change": null,
-   "isNew": true
+   "isNew": false
   },
   {
    "id": "EC61423825",
@@ -935,7 +940,7 @@
     }
    ],
    "change": null,
-   "isNew": true
+   "isNew": false
   },
   {
    "id": "42879274",
@@ -1084,7 +1089,7 @@
     "delta": -50,
     "lastDate": "2026-11-19"
    },
-   "isNew": true
+   "isNew": false
   },
   {
    "id": "EC61433905",
@@ -1430,7 +1435,7 @@
     "delta": -50,
     "lastDate": "2026-11-18"
    },
-   "isNew": true
+   "isNew": false
   },
   {
    "id": "43115328",
@@ -1579,7 +1584,7 @@
     }
    ],
    "change": null,
-   "isNew": true
+   "isNew": false
   },
   {
    "id": "43164301",
@@ -1626,7 +1631,7 @@
     }
    ],
    "change": null,
-   "isNew": true
+   "isNew": false
   },
   {
    "id": "43187014",
@@ -1772,7 +1777,7 @@
     }
    ],
    "change": null,
-   "isNew": true
+   "isNew": false
   },
   {
    "id": "43188716",
@@ -1833,11 +1838,11 @@
    "km": 16882,
    "color": "화이트",
    "region": "대구",
-   "price": 5690,
+   "price": 5670,
    "firstPrice": 5690,
    "registered": "2026-11-03",
    "status": "판매중",
-   "note": "1.6만km 주행, 4륜 캘리그래피 탄탄한 기본기, 선루프·전자제어서스펜션·어라운드뷰·HUD (11/16 선루프 표기 정정)",
+   "note": "1.6만km 주행, 4륜 캘리그래피 탄탄한 기본기, 선루프·전자제어서스펜션·어라운드뷰·HUD (11/16 선루프 표기 정정) (11/21 09시 5,670만 20만 인하, 기존 5,690만원)",
    "url": "https://fem.encar.com/cars/detail/42764891",
    "photos": [
     "https://ci.encar.com/carpicture/carpicture06/pic4276/42764891_001.jpg",
@@ -1857,15 +1862,23 @@
    "listPrice": 6414,
    "registeredAd": "2026-09-21T15:47:50",
    "dealer": "대구 북구 노원로 115",
-   "depreciation": 11.3,
+   "depreciation": 11.6,
    "priceHistory": [
     {
      "date": "2026-11-03",
      "time": null,
      "price": 5690
+    },
+    {
+     "date": "2026-11-21",
+     "time": null,
+     "price": 5670
     }
    ],
-   "change": null,
+   "change": {
+    "delta": -20,
+    "lastDate": "2026-11-21"
+   },
    "isNew": false
   },
   {
@@ -1913,7 +1926,7 @@
     }
    ],
    "change": null,
-   "isNew": true
+   "isNew": false
   },
   {
    "id": "42802409",
@@ -2020,7 +2033,7 @@
     }
    ],
    "change": null,
-   "isNew": true
+   "isNew": false
   },
   {
    "id": "43145724",
@@ -2067,6 +2080,66 @@
     }
    ],
    "change": null,
+   "isNew": false
+  },
+  {
+   "id": "43030060",
+   "source": "encar",
+   "trim": "캘리그래피",
+   "title": "팰리세이드(LX3) HEV 2.5T 캘리그래피",
+   "drive": "4WD",
+   "seats": "9인승",
+   "sunroof": true,
+   "yearMonth": "26/05",
+   "km": 7457,
+   "color": "청색",
+   "region": "경기 광명",
+   "price": 5900,
+   "firstPrice": 5900,
+   "registered": "2026-11-21",
+   "status": "판매중",
+   "note": "26/05 준신차(7,457km) 풀옵션 — 선루프·전자제어서스·어라운드뷰·2열통풍·HUD, 판매자 완전무사고 주장(엔카진단++ 파트너·광명 한마음모터스), 10/27 최초등록 후 11/20 14:23 갱신되며 목록 상단 포착. 26/08 2,630km 42903716(5,950)·25/12 7,370km 43145724(5,850)와 견줄 4WD 준신차 하단 가격대 (11/21 신규 추가)",
+   "url": "https://fem.encar.com/cars/detail/43030060",
+   "photos": [
+    "https://ci.encar.com/carpicture/carpicture02/pic4302/43028977_002.jpg",
+    "https://ci.encar.com/carpicture/carpicture02/pic4302/43028977_003.jpg",
+    "https://ci.encar.com/carpicture/carpicture02/pic4302/43028977_004.jpg",
+    "https://ci.encar.com/carpicture/carpicture02/pic4302/43028977_005.jpg",
+    "https://ci.encar.com/carpicture/carpicture02/pic4302/43028977_006.jpg"
+   ],
+   "options": {
+    "sunroof": true,
+    "aroundView": true,
+    "hud": true,
+    "ecs": true,
+    "vent2": true,
+    "massage": true
+   },
+   "listPrice": 6414,
+   "registeredAd": "2026-10-27T14:30:44",
+   "dealer": "경기 광명시 오리로651번길 6",
+   "depreciation": 8.0,
+   "priceHistory": [
+    {
+     "date": "2026-11-20",
+     "time": "14:23",
+     "price": 5950
+    },
+    {
+     "date": "2026-11-20",
+     "time": "14:23",
+     "price": 5850
+    },
+    {
+     "date": "2026-11-21",
+     "time": null,
+     "price": 5900
+    }
+   ],
+   "change": {
+    "delta": 50,
+    "lastDate": "2026-11-21"
+   },
    "isNew": true
   },
   {
