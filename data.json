@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-21T09:55",
+ "generatedAt": "2026-11-21T17:50",
  "source": "구글 시트 \"팰리세이드 HEV 중고 매매 트래커\" + 엔카/케이카 상세 API",
  "count": 41,
  "listings": [
@@ -275,6 +275,66 @@
    "isNew": false
   },
   {
+   "id": "43118572",
+   "source": "encar",
+   "trim": "캘리그래피",
+   "title": "팰리세이드(LX3) HEV 2.5T 캘리그래피",
+   "drive": "2WD",
+   "seats": "9인승",
+   "sunroof": false,
+   "yearMonth": "25/08",
+   "km": 30086,
+   "color": "녹색",
+   "region": "경기 용인",
+   "price": 4830,
+   "firstPrice": 4990,
+   "registered": "2026-11-16",
+   "status": "판매중",
+   "note": "프리뷰 전자제어서스펜션+빌트인캠2 Plus+AR내비, 화이트시트, 어라운드뷰·HUD, 선루프 없음, 3만km 주행, 판매자 자평 전국 최저가 (11/16 시트 신규 추가, 11/19 4,990→4,930만 60만 인하)→11/21 17시 4,830만 100만 인하",
+   "url": "https://fem.encar.com/cars/detail/43118572",
+   "photos": [
+    "https://ci.encar.com/carpicture/carpicture01/pic4311/43117453_001.jpg",
+    "https://ci.encar.com/carpicture/carpicture01/pic4311/43117453_002.jpg",
+    "https://ci.encar.com/carpicture/carpicture01/pic4311/43117453_003.jpg",
+    "https://ci.encar.com/carpicture/carpicture01/pic4311/43117453_004.jpg",
+    "https://ci.encar.com/carpicture/carpicture01/pic4311/43117453_005.jpg"
+   ],
+   "options": {
+    "sunroof": false,
+    "aroundView": true,
+    "hud": true,
+    "ecs": true,
+    "vent2": true,
+    "massage": true
+   },
+   "listPrice": 6186,
+   "registeredAd": "2026-11-09T13:28:37",
+   "dealer": "경기 용인시 기흥구 용구대로 2308",
+   "depreciation": 21.9,
+   "priceHistory": [
+    {
+     "date": "2026-11-16",
+     "time": null,
+     "price": 4990
+    },
+    {
+     "date": "2026-11-19",
+     "time": null,
+     "price": 4930
+    },
+    {
+     "date": "2026-11-21",
+     "time": null,
+     "price": 4830
+    }
+   ],
+   "change": {
+    "delta": -100,
+    "lastDate": "2026-11-21"
+   },
+   "isNew": false
+  },
+  {
    "id": "EC61423825",
    "source": "kcar",
    "trim": "프레스티지",
@@ -437,61 +497,6 @@
    ],
    "change": {
     "delta": -30,
-    "lastDate": "2026-11-19"
-   },
-   "isNew": false
-  },
-  {
-   "id": "43118572",
-   "source": "encar",
-   "trim": "캘리그래피",
-   "title": "팰리세이드(LX3) HEV 2.5T 캘리그래피",
-   "drive": "2WD",
-   "seats": "9인승",
-   "sunroof": false,
-   "yearMonth": "25/08",
-   "km": 30086,
-   "color": "녹색",
-   "region": "경기 용인",
-   "price": 4930,
-   "firstPrice": 4990,
-   "registered": "2026-11-16",
-   "status": "판매중",
-   "note": "프리뷰 전자제어서스펜션+빌트인캠2 Plus+AR내비, 화이트시트, 어라운드뷰·HUD, 선루프 없음, 3만km 주행, 판매자 자평 전국 최저가 (11/16 시트 신규 추가, 11/19 4,990→4,930만 60만 인하)",
-   "url": "https://fem.encar.com/cars/detail/43118572",
-   "photos": [
-    "https://ci.encar.com/carpicture/carpicture01/pic4311/43117453_001.jpg",
-    "https://ci.encar.com/carpicture/carpicture01/pic4311/43117453_002.jpg",
-    "https://ci.encar.com/carpicture/carpicture01/pic4311/43117453_003.jpg",
-    "https://ci.encar.com/carpicture/carpicture01/pic4311/43117453_004.jpg",
-    "https://ci.encar.com/carpicture/carpicture01/pic4311/43117453_005.jpg"
-   ],
-   "options": {
-    "sunroof": false,
-    "aroundView": true,
-    "hud": true,
-    "ecs": true,
-    "vent2": true,
-    "massage": true
-   },
-   "listPrice": 6186,
-   "registeredAd": "2026-11-09T13:28:37",
-   "dealer": "경기 용인시 기흥구 용구대로 2308",
-   "depreciation": 20.3,
-   "priceHistory": [
-    {
-     "date": "2026-11-16",
-     "time": null,
-     "price": 4990
-    },
-    {
-     "date": "2026-11-19",
-     "time": null,
-     "price": 4930
-    }
-   ],
-   "change": {
-    "delta": -60,
     "lastDate": "2026-11-19"
    },
    "isNew": false
@@ -1092,6 +1097,96 @@
    "isNew": false
   },
   {
+   "id": "42703338",
+   "source": "encar",
+   "trim": "캘리그래피",
+   "title": "팰리세이드(LX3) HEV 2.5T 캘리그래피",
+   "drive": "4WD",
+   "seats": "9인승",
+   "sunroof": false,
+   "yearMonth": "25/07",
+   "km": 13612,
+   "color": "블랙",
+   "region": "충남",
+   "price": 5380,
+   "firstPrice": 5400,
+   "registered": "2026-11-03",
+   "status": "판매중",
+   "note": "4륜 캘리그래피, 선루프 없음 확정 (11/4 5,370만 인하→11/5 5,470만 인상→11/6 5,390만 재인하→11/9 5,490만 재인상→11/11 5,400만 재인하→11/14 5,370만 30만 인하→11/18 5,450만 80만 인상, 11/16 엔카 옵션·상세페이지 대조로 선루프X 정정)→11/21 17시 5,380만 70만 인하",
+   "url": "https://fem.encar.com/cars/detail/42703338",
+   "photos": [
+    "https://ci.encar.com/carpicture/carpicture10/pic4270/42702377_002.jpg",
+    "https://ci.encar.com/carpicture/carpicture10/pic4270/42702377_003.jpg",
+    "https://ci.encar.com/carpicture/carpicture10/pic4270/42702377_004.jpg",
+    "https://ci.encar.com/carpicture/carpicture10/pic4270/42702377_005.jpg",
+    "https://ci.encar.com/carpicture/carpicture10/pic4270/42702377_006.jpg"
+   ],
+   "options": {
+    "sunroof": false,
+    "aroundView": true,
+    "hud": true,
+    "ecs": false,
+    "vent2": true,
+    "massage": true
+   },
+   "listPrice": 6414,
+   "registeredAd": "2026-11-09T21:21:02",
+   "dealer": "충남 아산시",
+   "depreciation": 16.1,
+   "priceHistory": [
+    {
+     "date": "2026-11-03",
+     "time": null,
+     "price": 5400
+    },
+    {
+     "date": "2026-11-04",
+     "time": null,
+     "price": 5370
+    },
+    {
+     "date": "2026-11-05",
+     "time": null,
+     "price": 5470
+    },
+    {
+     "date": "2026-11-06",
+     "time": null,
+     "price": 5390
+    },
+    {
+     "date": "2026-11-09",
+     "time": null,
+     "price": 5490
+    },
+    {
+     "date": "2026-11-11",
+     "time": null,
+     "price": 5400
+    },
+    {
+     "date": "2026-11-14",
+     "time": null,
+     "price": 5370
+    },
+    {
+     "date": "2026-11-18",
+     "time": null,
+     "price": 5450
+    },
+    {
+     "date": "2026-11-21",
+     "time": null,
+     "price": 5380
+    }
+   ],
+   "change": {
+    "delta": -70,
+    "lastDate": "2026-11-21"
+   },
+   "isNew": false
+  },
+  {
    "id": "EC61433905",
    "source": "kcar",
    "trim": "캘리그래피",
@@ -1195,91 +1290,6 @@
    "change": {
     "delta": -50,
     "lastDate": "2026-11-04"
-   },
-   "isNew": false
-  },
-  {
-   "id": "42703338",
-   "source": "encar",
-   "trim": "캘리그래피",
-   "title": "팰리세이드(LX3) HEV 2.5T 캘리그래피",
-   "drive": "4WD",
-   "seats": "9인승",
-   "sunroof": false,
-   "yearMonth": "25/07",
-   "km": 13612,
-   "color": "블랙",
-   "region": "충남",
-   "price": 5450,
-   "firstPrice": 5400,
-   "registered": "2026-11-03",
-   "status": "판매중",
-   "note": "4륜 캘리그래피, 선루프 없음 확정 (11/4 5,370만 인하→11/5 5,470만 인상→11/6 5,390만 재인하→11/9 5,490만 재인상→11/11 5,400만 재인하→11/14 5,370만 30만 인하→11/18 5,450만 80만 인상, 11/16 엔카 옵션·상세페이지 대조로 선루프X 정정)",
-   "url": "https://fem.encar.com/cars/detail/42703338",
-   "photos": [
-    "https://ci.encar.com/carpicture/carpicture10/pic4270/42702377_002.jpg",
-    "https://ci.encar.com/carpicture/carpicture10/pic4270/42702377_003.jpg",
-    "https://ci.encar.com/carpicture/carpicture10/pic4270/42702377_004.jpg",
-    "https://ci.encar.com/carpicture/carpicture10/pic4270/42702377_005.jpg",
-    "https://ci.encar.com/carpicture/carpicture10/pic4270/42702377_006.jpg"
-   ],
-   "options": {
-    "sunroof": false,
-    "aroundView": true,
-    "hud": true,
-    "ecs": false,
-    "vent2": true,
-    "massage": true
-   },
-   "listPrice": 6414,
-   "registeredAd": "2026-11-09T21:21:02",
-   "dealer": "충남 아산시",
-   "depreciation": 15.0,
-   "priceHistory": [
-    {
-     "date": "2026-11-03",
-     "time": null,
-     "price": 5400
-    },
-    {
-     "date": "2026-11-04",
-     "time": null,
-     "price": 5370
-    },
-    {
-     "date": "2026-11-05",
-     "time": null,
-     "price": 5470
-    },
-    {
-     "date": "2026-11-06",
-     "time": null,
-     "price": 5390
-    },
-    {
-     "date": "2026-11-09",
-     "time": null,
-     "price": 5490
-    },
-    {
-     "date": "2026-11-11",
-     "time": null,
-     "price": 5400
-    },
-    {
-     "date": "2026-11-14",
-     "time": null,
-     "price": 5370
-    },
-    {
-     "date": "2026-11-18",
-     "time": null,
-     "price": 5450
-    }
-   ],
-   "change": {
-    "delta": 80,
-    "lastDate": "2026-11-18"
    },
    "isNew": false
   },
