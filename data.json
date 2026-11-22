@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-11-22T09:46",
+ "generatedAt": "2026-11-22T17:25",
  "source": "구글 시트 \"팰리세이드 HEV 중고 매매 트래커\" + 엔카/케이카 상세 API",
- "count": 40,
+ "count": 41,
  "listings": [
   {
    "id": "42590738",
@@ -787,6 +787,53 @@
     "lastDate": "2026-11-12"
    },
    "isNew": false
+  },
+  {
+   "id": "43076514",
+   "source": "encar",
+   "trim": "캘리그래피",
+   "title": "팰리세이드(LX3) HEV 2.5T 캘리그래피",
+   "drive": "2WD",
+   "seats": "9인승",
+   "sunroof": true,
+   "yearMonth": "25/05",
+   "km": 33260,
+   "color": "검정색",
+   "region": "서울 강남",
+   "price": 5190,
+   "firstPrice": 5190,
+   "registered": "2026-11-22",
+   "status": "판매중",
+   "note": "선루프·전자서스·어라운드뷰·2열통풍·마사지·HUD 풀옵션, 3.3만km 고주행 감가 — 3행 전북(5,070만·27,577km)보다 120만 높지만 서울 강남 소재·연식 1개월 최신, 29행 대구(5,290만·16,604km)보다 100만 저렴(주행 1.7만km 많음). 최초 광고 11/2로 오래됐지만 목록 하단이라 그간 미포착 (11/22 17시 신규 등재)",
+   "url": "https://fem.encar.com/cars/detail/43076514",
+   "photos": [
+    "https://ci.encar.com/carpicture/carpicture06/pic4306/43068796_002.jpg",
+    "https://ci.encar.com/carpicture/carpicture06/pic4306/43068796_003.jpg",
+    "https://ci.encar.com/carpicture/carpicture06/pic4306/43068796_004.jpg",
+    "https://ci.encar.com/carpicture/carpicture06/pic4306/43068796_005.jpg",
+    "https://ci.encar.com/carpicture/carpicture06/pic4306/43068796_006.jpg"
+   ],
+   "options": {
+    "sunroof": true,
+    "aroundView": true,
+    "hud": true,
+    "ecs": true,
+    "vent2": true,
+    "massage": true
+   },
+   "listPrice": 6186,
+   "registeredAd": "2026-11-02T16:17:17",
+   "dealer": "서울 강남구 헌릉로745길 25",
+   "depreciation": 16.1,
+   "priceHistory": [
+    {
+     "date": "2026-11-22",
+     "time": null,
+     "price": 5190
+    }
+   ],
+   "change": null,
+   "isNew": true
   },
   {
    "id": "42520349",
