@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-11-21T17:50",
+ "generatedAt": "2026-11-22T09:46",
  "source": "구글 시트 \"팰리세이드 HEV 중고 매매 트래커\" + 엔카/케이카 상세 API",
- "count": 41,
+ "count": 40,
  "listings": [
   {
    "id": "42590738",
@@ -614,7 +614,7 @@
     "delta": -370,
     "lastDate": "2026-11-20"
    },
-   "isNew": true
+   "isNew": false
   },
   {
    "id": "42642220",
@@ -1039,7 +1039,7 @@
     }
    ],
    "change": null,
-   "isNew": true
+   "isNew": false
   },
   {
    "id": "42764933",
@@ -1236,61 +1236,6 @@
     }
    ],
    "change": null,
-   "isNew": false
-  },
-  {
-   "id": "43081718",
-   "source": "encar",
-   "trim": "프레스티지",
-   "title": "팰리세이드(LX3) HEV 2.5T 프레스티지",
-   "drive": "4WD",
-   "seats": "7인승",
-   "sunroof": true,
-   "yearMonth": "26/03",
-   "km": 2783,
-   "color": "블랙",
-   "region": "경기",
-   "price": 5449,
-   "firstPrice": 5499,
-   "registered": "2026-11-03",
-   "status": "판매중",
-   "note": "2,783km 준신차급, 26년형 4륜 프레스티지 (11/4 5,449만원으로 인하, 기존 5,499만원)",
-   "url": "https://fem.encar.com/cars/detail/43081718",
-   "photos": [
-    "https://ci.encar.com/carpicture/carpicture07/pic4307/43076390_002.jpg",
-    "https://ci.encar.com/carpicture/carpicture07/pic4307/43076390_003.jpg",
-    "https://ci.encar.com/carpicture/carpicture07/pic4307/43076390_004.jpg",
-    "https://ci.encar.com/carpicture/carpicture07/pic4307/43076390_005.jpg",
-    "https://ci.encar.com/carpicture/carpicture07/pic4307/43076390_006.jpg"
-   ],
-   "options": {
-    "sunroof": true,
-    "aroundView": true,
-    "hud": true,
-    "ecs": false,
-    "vent2": true,
-    "massage": true
-   },
-   "listPrice": 5882,
-   "registeredAd": "2026-11-03T10:41:40",
-   "dealer": "경기 광명시",
-   "depreciation": 7.4,
-   "priceHistory": [
-    {
-     "date": "2026-11-03",
-     "time": null,
-     "price": 5499
-    },
-    {
-     "date": "2026-11-04",
-     "time": null,
-     "price": 5449
-    }
-   ],
-   "change": {
-    "delta": -50,
-    "lastDate": "2026-11-04"
-   },
    "isNew": false
   },
   {
@@ -2197,7 +2142,7 @@
     }
    ],
    "change": null,
-   "isNew": true
+   "isNew": false
   }
  ]
 }
