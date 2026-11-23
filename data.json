@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-23T10:02",
+ "generatedAt": "2026-11-23T10:04",
  "source": "구글 시트 \"팰리세이드 HEV 중고 매매 트래커\" + 엔카/케이카 상세 API",
  "count": 41,
  "listings": [
@@ -592,6 +592,66 @@
    "isNew": false
   },
   {
+   "id": "42642220",
+   "source": "encar",
+   "trim": "프레스티지",
+   "title": "팰리세이드(LX3) HEV 2.5T 프레스티지",
+   "drive": "2WD",
+   "seats": "9인승",
+   "sunroof": true,
+   "yearMonth": "25/07",
+   "km": 13406,
+   "color": "블랙",
+   "region": "경기",
+   "price": 4970,
+   "firstPrice": 5000,
+   "registered": "46329",
+   "status": "판매중",
+   "note": "1인신조, 완전무사고, 선루프+서라운드뷰 완비 (11/23 09시 4,970만 30만 인하, 기존 5,000만원)",
+   "url": "https://fem.encar.com/cars/detail/42642220",
+   "photos": [
+    "https://ci.encar.com/carpicture/carpicture04/pic4264/42642220_001.jpg",
+    "https://ci.encar.com/carpicture/carpicture04/pic4264/42642220_002.jpg",
+    "https://ci.encar.com/carpicture/carpicture04/pic4264/42642220_003.jpg",
+    "https://ci.encar.com/carpicture/carpicture04/pic4264/42642220_004.jpg",
+    "https://ci.encar.com/carpicture/carpicture04/pic4264/42642220_005.jpg"
+   ],
+   "options": {
+    "sunroof": true,
+    "aroundView": true,
+    "hud": false,
+    "ecs": false,
+    "vent2": true,
+    "massage": true
+   },
+   "listPrice": 5536,
+   "registeredAd": "2026-11-01T21:23:45",
+   "dealer": "경기 수원시 권선구 권선로 308-5",
+   "depreciation": 10.2,
+   "priceHistory": [
+    {
+     "date": "2026-11-23",
+     "time": null,
+     "price": 4970
+    },
+    {
+     "date": "46329",
+     "time": null,
+     "price": 5000
+    },
+    {
+     "date": "2026-11-23",
+     "time": null,
+     "price": 4970
+    }
+   ],
+   "change": {
+    "delta": -30,
+    "lastDate": "2026-11-23"
+   },
+   "isNew": false
+  },
+  {
    "id": "42376100",
    "source": "encar",
    "trim": "캘리그래피",
@@ -659,53 +719,6 @@
     "delta": -510,
     "lastDate": "2026-11-23"
    },
-   "isNew": false
-  },
-  {
-   "id": "42642220",
-   "source": "encar",
-   "trim": "프레스티지",
-   "title": "팰리세이드(LX3) HEV 2.5T 프레스티지",
-   "drive": "2WD",
-   "seats": "9인승",
-   "sunroof": true,
-   "yearMonth": "25/07",
-   "km": 13406,
-   "color": "블랙",
-   "region": "경기",
-   "price": 5000,
-   "firstPrice": 5000,
-   "registered": "46329",
-   "status": "판매중",
-   "note": "1인신조, 완전무사고, 선루프+서라운드뷰 완비",
-   "url": "https://fem.encar.com/cars/detail/42642220",
-   "photos": [
-    "https://ci.encar.com/carpicture/carpicture04/pic4264/42642220_001.jpg",
-    "https://ci.encar.com/carpicture/carpicture04/pic4264/42642220_002.jpg",
-    "https://ci.encar.com/carpicture/carpicture04/pic4264/42642220_003.jpg",
-    "https://ci.encar.com/carpicture/carpicture04/pic4264/42642220_004.jpg",
-    "https://ci.encar.com/carpicture/carpicture04/pic4264/42642220_005.jpg"
-   ],
-   "options": {
-    "sunroof": true,
-    "aroundView": true,
-    "hud": false,
-    "ecs": false,
-    "vent2": true,
-    "massage": true
-   },
-   "listPrice": 5536,
-   "registeredAd": "2026-11-01T21:23:45",
-   "dealer": "경기 수원시 권선구 권선로 308-5",
-   "depreciation": 9.7,
-   "priceHistory": [
-    {
-     "date": "46329",
-     "time": null,
-     "price": 5000
-    }
-   ],
-   "change": null,
    "isNew": false
   },
   {
@@ -861,16 +874,24 @@
    "status": "판매중",
    "note": "선루프·전자서스·어라운드뷰·2열통풍·마사지·HUD 풀옵션, 3.3만km 고주행 감가 — 3행 전북(5,070만·27,577km)보다 120만 높지만 서울 강남 소재·연식 1개월 최신, 29행 대구(5,290만·16,604km)보다 100만 저렴(주행 1.7만km 많음). 최초 광고 11/2로 오래됐지만 목록 하단이라 그간 미포착 (11/22 17시 신규 등재)",
    "url": "https://fem.encar.com/cars/detail/43076514",
-   "photos": [],
+   "photos": [
+    "https://ci.encar.com/carpicture/carpicture06/pic4306/43068796_002.jpg",
+    "https://ci.encar.com/carpicture/carpicture06/pic4306/43068796_003.jpg",
+    "https://ci.encar.com/carpicture/carpicture06/pic4306/43068796_004.jpg",
+    "https://ci.encar.com/carpicture/carpicture06/pic4306/43068796_005.jpg",
+    "https://ci.encar.com/carpicture/carpicture06/pic4306/43068796_006.jpg"
+   ],
    "options": {
     "sunroof": true,
-    "aroundView": false,
-    "hud": false,
-    "ecs": false,
-    "vent2": false,
-    "massage": false
+    "aroundView": true,
+    "hud": true,
+    "ecs": true,
+    "vent2": true,
+    "massage": true
    },
    "listPrice": 6186,
+   "registeredAd": "2026-11-02T16:17:17",
+   "dealer": "서울 강남구 헌릉로745길 25",
    "depreciation": 16.1,
    "priceHistory": [
     {
@@ -1522,7 +1543,7 @@
    "firstPrice": 5620,
    "registered": "46340",
    "status": "판매중",
-   "note": "엔카진단++, 무사고, 보험이력0원, 전자제어서스펜션+선루프+빌트인캠+브라운시트 (11/14 신규 추가 / 11/20 14:26 5,620→5,580만 40만 인하)",
+   "note": "엔카진단++, 무사고, 보험이력0원, 전자제어서스펜션+선루프+빌트인캠+브라운시트 (11/14 신규 추가 / 11/20 14:26 5,620→5,580만 40만 인하) (11/23 09시 엔카 상세 '계약중' 표시 확인 — 계약 진행 중, 가격 5,580만원 유지)",
    "url": "https://fem.encar.com/cars/detail/43115328",
    "photos": [
     "https://ci.encar.com/carpicture/carpicture01/pic4311/43115328_002.jpg",
@@ -1589,16 +1610,24 @@
    "status": "판매중",
    "note": "25/11식 최신 연식 4WD 캘리, 선루프·어라운드뷰·HUD·2열통풍·마사지 O·전자서스 X, 엔카진단+ 무사고, 1.97만km — 19행(5,649만·25/08·8,367km)보다 59만 저렴(주행 1.1만km 많음) (11/20 발굴, 최초등록 11/19 15:34)",
    "url": "https://fem.encar.com/cars/detail/43188837",
-   "photos": [],
+   "photos": [
+    "https://ci.encar.com/carpicture/carpicture08/pic4318/43184975_001.jpg",
+    "https://ci.encar.com/carpicture/carpicture08/pic4318/43184975_002.jpg",
+    "https://ci.encar.com/carpicture/carpicture08/pic4318/43184975_003.jpg",
+    "https://ci.encar.com/carpicture/carpicture08/pic4318/43184975_004.jpg",
+    "https://ci.encar.com/carpicture/carpicture08/pic4318/43184975_005.jpg"
+   ],
    "options": {
     "sunroof": true,
-    "aroundView": false,
-    "hud": false,
+    "aroundView": true,
+    "hud": true,
     "ecs": false,
-    "vent2": false,
-    "massage": false
+    "vent2": true,
+    "massage": true
    },
    "listPrice": 6414,
+   "registeredAd": "2026-11-19T15:34:47",
+   "dealer": "인천 미추홀구 염전로 381",
    "depreciation": 12.8,
    "priceHistory": [
     {
@@ -1675,16 +1704,24 @@
    "status": "판매중",
    "note": "4WD 캘리그래피 풀옵션(선루프·전자서스·어라운드뷰·2열통풍·마사지·HUD), 완전무사고 자평, 2.7만km, 11/17 14:36 신규 등록 (11/18 신규 추가)",
    "url": "https://fem.encar.com/cars/detail/43164301",
-   "photos": [],
+   "photos": [
+    "https://ci.encar.com/carpicture/carpicture06/pic4316/43164299_002.jpg",
+    "https://ci.encar.com/carpicture/carpicture06/pic4316/43164299_003.jpg",
+    "https://ci.encar.com/carpicture/carpicture06/pic4316/43164299_004.jpg",
+    "https://ci.encar.com/carpicture/carpicture06/pic4316/43164299_005.jpg",
+    "https://ci.encar.com/carpicture/carpicture06/pic4316/43164299_006.jpg"
+   ],
    "options": {
     "sunroof": true,
-    "aroundView": false,
-    "hud": false,
-    "ecs": false,
-    "vent2": false,
-    "massage": false
+    "aroundView": true,
+    "hud": true,
+    "ecs": true,
+    "vent2": true,
+    "massage": true
    },
    "listPrice": 6414,
+   "registeredAd": "2026-11-17T14:36:52",
+   "dealer": "경기 안산시 단원구 원포공원1로 16",
    "depreciation": 12.7,
    "priceHistory": [
     {
