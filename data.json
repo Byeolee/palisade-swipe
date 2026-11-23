@@ -1,8 +1,55 @@
 {
- "generatedAt": "2026-11-23T10:04",
+ "generatedAt": "2026-11-23T10:06",
  "source": "구글 시트 \"팰리세이드 HEV 중고 매매 트래커\" + 엔카/케이카 상세 API",
- "count": 41,
+ "count": 42,
  "listings": [
+  {
+   "id": "43189480",
+   "source": "encar",
+   "trim": "프레스티지",
+   "title": "팰리세이드(LX3) HEV 2.5T 프레스티지",
+   "drive": "4WD",
+   "seats": "9인승",
+   "sunroof": true,
+   "yearMonth": "25/06",
+   "km": 85095,
+   "color": "검정색",
+   "region": "대구",
+   "price": 4200,
+   "firstPrice": 4200,
+   "registered": "46349",
+   "status": "판매중",
+   "note": "엔카진단++ 무사고, 듀얼선루프·어라운드뷰 O·전자서스·2열통풍·HUD X, 8.5만km 고주행 감가로 전국 최저가(5행 4,390만보다 190만 저렴) — 4WD 프레스티지 최저가(11행 4,899만·30,864km 대비 699만 저렴, 25행 4,780만·43,229km 대비 580만 저렴). 최초 광고 11/19 17:27, 11/23 09시 발굴",
+   "url": "https://fem.encar.com/cars/detail/43189480",
+   "photos": [
+    "https://ci.encar.com/carpicture/carpicture08/pic4318/43189480_002.jpg",
+    "https://ci.encar.com/carpicture/carpicture08/pic4318/43189480_003.jpg",
+    "https://ci.encar.com/carpicture/carpicture08/pic4318/43189480_004.jpg",
+    "https://ci.encar.com/carpicture/carpicture08/pic4318/43189480_005.jpg",
+    "https://ci.encar.com/carpicture/carpicture08/pic4318/43189480_006.jpg"
+   ],
+   "options": {
+    "sunroof": true,
+    "aroundView": true,
+    "hud": false,
+    "ecs": false,
+    "vent2": false,
+    "massage": false
+   },
+   "listPrice": 5764,
+   "registeredAd": "2026-11-19T17:27:17",
+   "dealer": "대구 동구 반야월로 277",
+   "depreciation": 27.1,
+   "priceHistory": [
+    {
+     "date": "46349",
+     "time": null,
+     "price": 4200
+    }
+   ],
+   "change": null,
+   "isNew": false
+  },
   {
    "id": "42590738",
    "source": "encar",
