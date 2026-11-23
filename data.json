@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-22T17:25",
+ "generatedAt": "2026-11-23T10:02",
  "source": "구글 시트 \"팰리세이드 HEV 중고 매매 트래커\" + 엔카/케이카 상세 API",
  "count": 41,
  "listings": [
@@ -17,7 +17,7 @@
    "region": "경기",
    "price": 4390,
    "firstPrice": 4470,
-   "registered": "2026-11-03",
+   "registered": "46329",
    "status": "판매중",
    "note": "가성비 원픽 전국최저가, 키로수 감가 극대화, 서라운드뷰 (11/5 4,450만→11/12 4,440만→11/18 4,400만 40만 추가 인하, 기존 4,470만원) (11/21 09시 4,390만 10만 추가 인하, 기존 4,400만원)",
    "url": "https://fem.encar.com/cars/detail/42590738",
@@ -42,11 +42,6 @@
    "depreciation": 20.7,
    "priceHistory": [
     {
-     "date": "2026-11-03",
-     "time": null,
-     "price": 4470
-    },
-    {
      "date": "2026-11-05",
      "time": null,
      "price": 4450
@@ -65,11 +60,21 @@
      "date": "2026-11-21",
      "time": null,
      "price": 4390
+    },
+    {
+     "date": "46329",
+     "time": null,
+     "price": 4470
+    },
+    {
+     "date": "2026-11-23",
+     "time": null,
+     "price": 4390
     }
    ],
    "change": {
-    "delta": -10,
-    "lastDate": "2026-11-21"
+    "delta": -80,
+    "lastDate": "2026-11-23"
    },
    "isNew": false
   },
@@ -87,7 +92,7 @@
    "region": "경기 용인",
    "price": 4590,
    "firstPrice": 4590,
-   "registered": "2026-11-16",
+   "registered": "46342",
    "status": "판매중",
    "note": "익스클루시브 트림(캘리그래피 아래) 4WD 최저가, 선루프 있음 — 단 360도 어라운드뷰 미장착이라 '와이프도 운전' 필수조건 미충족 (11/16 시트 신규 추가)",
    "url": "https://fem.encar.com/cars/detail/42671320",
@@ -112,7 +117,7 @@
    "depreciation": 11.9,
    "priceHistory": [
     {
-     "date": "2026-11-16",
+     "date": "46342",
      "time": null,
      "price": 4590
     }
@@ -134,7 +139,7 @@
    "region": "서울 강서",
    "price": 4680,
    "firstPrice": 4680,
-   "registered": "2026-11-17",
+   "registered": "46343",
    "status": "판매중",
    "note": "엔카믿고, 엔카진단+·무사고, 어라운드뷰 O·선루프 X·전자서스 X, 익스클루시브(프레스티지 아래 트림) 4WD 9인승 최저가 — 20행(4,590만·22,457km·어라운드뷰X)보다 90만 높지만 어라운드뷰 충족·주행 절반 (11/17 신규 추가) (11/18 18:13 4,680→4,880만 200만 인상) (11/19 4,880→4,680만 200만 재인하)",
    "url": "https://fem.encar.com/cars/detail/42406850",
@@ -154,13 +159,13 @@
     "massage": false
    },
    "listPrice": 5210,
-   "registeredAd": "2026-09-22T21:18:44",
+   "registeredAd": "2026-11-22T21:20:13",
    "dealer": "서울 강서구 양천로53길 30",
    "depreciation": 10.2,
    "priceHistory": [
     {
-     "date": "2026-11-17",
-     "time": null,
+     "date": "2026-11-18",
+     "time": "18:13",
      "price": 4680
     },
     {
@@ -194,7 +199,7 @@
    "region": "경기 수원 권선",
    "price": 4780,
    "firstPrice": 4780,
-   "registered": "2026-11-17",
+   "registered": "46343",
    "status": "판매중",
    "note": "엔카믿고(집앞배송·환불가능·엔카종합보증), 엔카진단+·완전무사고, 선루프·어라운드뷰·빌트인캠, 전자서스 없음, 4.3만km 고주행 — 4WD 프레스티지 최저가(11행 4,899만·30,864km보다 119만 저렴) (11/17 신규 추가)",
    "url": "https://fem.encar.com/cars/detail/42699940",
@@ -219,7 +224,7 @@
    "depreciation": 17.1,
    "priceHistory": [
     {
-     "date": "2026-11-17",
+     "date": "46343",
      "time": null,
      "price": 4780
     }
@@ -241,7 +246,7 @@
    "region": "부산",
    "price": 4780,
    "firstPrice": 4780,
-   "registered": "2026-11-18",
+   "registered": "46344",
    "status": "판매중",
    "note": "2WD 캘리그래피 최저가, 어라운드뷰·HUD·2열통풍·마사지, 선루프·전자서스 없음, 6.9만km 고주행, 11/18 08:25 신규 등록 (11/18 신규 추가)",
    "url": "https://fem.encar.com/cars/detail/43172257",
@@ -266,7 +271,7 @@
    "depreciation": 22.7,
    "priceHistory": [
     {
-     "date": "2026-11-18",
+     "date": "46344",
      "time": null,
      "price": 4780
     }
@@ -288,7 +293,7 @@
    "region": "경기 용인",
    "price": 4830,
    "firstPrice": 4990,
-   "registered": "2026-11-16",
+   "registered": "46342",
    "status": "판매중",
    "note": "프리뷰 전자제어서스펜션+빌트인캠2 Plus+AR내비, 화이트시트, 어라운드뷰·HUD, 선루프 없음, 3만km 주행, 판매자 자평 전국 최저가 (11/16 시트 신규 추가, 11/19 4,990→4,930만 60만 인하)→11/21 17시 4,830만 100만 인하",
    "url": "https://fem.encar.com/cars/detail/43118572",
@@ -313,7 +318,7 @@
    "depreciation": 21.9,
    "priceHistory": [
     {
-     "date": "2026-11-16",
+     "date": "2026-11-19",
      "time": null,
      "price": 4990
     },
@@ -326,11 +331,21 @@
      "date": "2026-11-21",
      "time": null,
      "price": 4830
+    },
+    {
+     "date": "46342",
+     "time": null,
+     "price": 4990
+    },
+    {
+     "date": "2026-11-23",
+     "time": null,
+     "price": 4830
     }
    ],
    "change": {
-    "delta": -100,
-    "lastDate": "2026-11-21"
+    "delta": -160,
+    "lastDate": "2026-11-23"
    },
    "isNew": false
   },
@@ -348,7 +363,7 @@
    "region": "경기 부천",
    "price": 4850,
    "firstPrice": 4850,
-   "registered": "2026-11-16",
+   "registered": "46342",
    "status": "판매중",
    "note": "케이카 경기서부직영, 무사고·보험이력 없음·소유주 변경 2회, 360도 어라운드뷰, 선루프 없음, 선택옵션 66만(빌트인캠2 Plus·AR내비), 제조사보증 1년9개월/37,677km, 직영 4천만 원대 유일 (11/16 시트 신규 추가)",
    "url": "https://www.kcar.com/bc/detail/carInfoDtl?i_sCarCd=EC61423825",
@@ -378,7 +393,7 @@
    "depreciation": 12.4,
    "priceHistory": [
     {
-     "date": "2026-11-16",
+     "date": "46342",
      "time": null,
      "price": 4850
     }
@@ -400,7 +415,7 @@
    "region": "경기",
    "price": 4899,
    "firstPrice": 4990,
-   "registered": "2026-11-03",
+   "registered": "46329",
    "status": "판매중",
    "note": "4륜 HEV 유일 4천만 원대 알짜 매물, 선루프 있음·어라운드뷰 있음 (11/9 4,920만 인하→11/14 4,899만 21만 추가 인하, 기존 4,990만원, 11/16 선루프 정정, 엔카 옵션목록에 HUD는 없음)",
    "url": "https://fem.encar.com/cars/detail/43046573",
@@ -425,11 +440,6 @@
    "depreciation": 15.0,
    "priceHistory": [
     {
-     "date": "2026-11-03",
-     "time": null,
-     "price": 4990
-    },
-    {
      "date": "2026-11-09",
      "time": null,
      "price": 4920
@@ -438,11 +448,21 @@
      "date": "2026-11-14",
      "time": null,
      "price": 4899
+    },
+    {
+     "date": "46329",
+     "time": null,
+     "price": 4990
+    },
+    {
+     "date": "2026-11-23",
+     "time": null,
+     "price": 4899
     }
    ],
    "change": {
-    "delta": -21,
-    "lastDate": "2026-11-14"
+    "delta": -91,
+    "lastDate": "2026-11-23"
    },
    "isNew": false
   },
@@ -460,7 +480,7 @@
    "region": "경기 고양 일산서구",
    "price": 4920,
    "firstPrice": 4950,
-   "registered": "2026-11-16",
+   "registered": "46342",
    "status": "판매중",
    "note": "어라운드뷰·HUD, 선루프·전자서스 없음, 1.8만km (11/16 시트 신규 추가, 11/19 4,950→4,920만 30만 인하)",
    "url": "https://fem.encar.com/cars/detail/43021134",
@@ -485,7 +505,7 @@
    "depreciation": 11.1,
    "priceHistory": [
     {
-     "date": "2026-11-16",
+     "date": "2026-11-19",
      "time": null,
      "price": 4950
     },
@@ -493,11 +513,21 @@
      "date": "2026-11-19",
      "time": null,
      "price": 4920
+    },
+    {
+     "date": "46342",
+     "time": null,
+     "price": 4950
+    },
+    {
+     "date": "2026-11-23",
+     "time": null,
+     "price": 4920
     }
    ],
    "change": {
     "delta": -30,
-    "lastDate": "2026-11-19"
+    "lastDate": "2026-11-23"
    },
    "isNew": false
   },
@@ -515,7 +545,7 @@
    "region": "경기",
    "price": 4944,
    "firstPrice": 5100,
-   "registered": "2026-11-03",
+   "registered": "46329",
    "status": "판매중",
    "note": "1.3만km 짧은 주행거리 캘리그래피 풀옵션 (11/4 4,944만원으로 인하, 기존 5,100만원)",
    "url": "https://fem.encar.com/cars/detail/42512735",
@@ -540,19 +570,24 @@
    "depreciation": 20.1,
    "priceHistory": [
     {
-     "date": "2026-11-03",
+     "date": "2026-11-04",
+     "time": null,
+     "price": 4944
+    },
+    {
+     "date": "46329",
      "time": null,
      "price": 5100
     },
     {
-     "date": "2026-11-04",
+     "date": "2026-11-23",
      "time": null,
      "price": 4944
     }
    ],
    "change": {
     "delta": -156,
-    "lastDate": "2026-11-04"
+    "lastDate": "2026-11-23"
    },
    "isNew": false
   },
@@ -570,7 +605,7 @@
    "region": "충북 청주",
    "price": 4980,
    "firstPrice": 5490,
-   "registered": "2026-11-19",
+   "registered": "46345",
    "status": "판매중",
    "note": "25/11식 3,670km 준신차급, 어라운드뷰·HUD·2열통풍·마사지 O, 선루프·전자서스 X, 최초등록 11/18 01:08 (11/19 시트 신규 추가 / 11/19 19:21 5,490→5,350만 140만 인하 / 11/20 14:06 5,350→4,980만 370만 추가 인하)",
    "url": "https://fem.encar.com/cars/detail/42376100",
@@ -608,11 +643,21 @@
      "date": "2026-11-20",
      "time": "14:06",
      "price": 4980
+    },
+    {
+     "date": "46345",
+     "time": null,
+     "price": 5490
+    },
+    {
+     "date": "2026-11-23",
+     "time": null,
+     "price": 4980
     }
    ],
    "change": {
-    "delta": -370,
-    "lastDate": "2026-11-20"
+    "delta": -510,
+    "lastDate": "2026-11-23"
    },
    "isNew": false
   },
@@ -630,7 +675,7 @@
    "region": "경기",
    "price": 5000,
    "firstPrice": 5000,
-   "registered": "2026-11-03",
+   "registered": "46329",
    "status": "판매중",
    "note": "1인신조, 완전무사고, 선루프+서라운드뷰 완비",
    "url": "https://fem.encar.com/cars/detail/42642220",
@@ -655,7 +700,7 @@
    "depreciation": 9.7,
    "priceHistory": [
     {
-     "date": "2026-11-03",
+     "date": "46329",
      "time": null,
      "price": 5000
     }
@@ -677,7 +722,7 @@
    "region": "전북",
    "price": 5070,
    "firstPrice": 5050,
-   "registered": "2026-11-03",
+   "registered": "46329",
    "status": "판매중",
    "note": "캘리그래피 전국최저가, 듀얼와이드선루프 (11/4 5,150만 인상→11/9 5,100만 재인하→11/16 5,090만 10만 인하→11/19 08:28 5,070만 20만 추가 인하, 기존 5,050만원)",
    "url": "https://fem.encar.com/cars/detail/42848583",
@@ -702,11 +747,6 @@
    "depreciation": 18.0,
    "priceHistory": [
     {
-     "date": "2026-11-03",
-     "time": null,
-     "price": 5050
-    },
-    {
      "date": "2026-11-04",
      "time": null,
      "price": 5150
@@ -725,11 +765,21 @@
      "date": "2026-11-19",
      "time": "08:28",
      "price": 5070
+    },
+    {
+     "date": "46329",
+     "time": null,
+     "price": 5050
+    },
+    {
+     "date": "2026-11-23",
+     "time": null,
+     "price": 5070
     }
    ],
    "change": {
-    "delta": -20,
-    "lastDate": "2026-11-19"
+    "delta": 20,
+    "lastDate": "2026-11-23"
    },
    "isNew": false
   },
@@ -747,7 +797,7 @@
    "region": "인천",
    "price": 5130,
    "firstPrice": 5050,
-   "registered": "2026-11-03",
+   "registered": "46329",
    "status": "판매중",
    "note": "1인신조, 보험이력0원, 선루프, 사이드스텝 (11/12 5,130만으로 80만 인상, 기존 5,050만원)",
    "url": "https://fem.encar.com/cars/detail/42127965",
@@ -772,19 +822,24 @@
    "depreciation": 9.1,
    "priceHistory": [
     {
-     "date": "2026-11-03",
+     "date": "2026-11-12",
+     "time": null,
+     "price": 5130
+    },
+    {
+     "date": "46329",
      "time": null,
      "price": 5050
     },
     {
-     "date": "2026-11-12",
+     "date": "2026-11-23",
      "time": null,
      "price": 5130
     }
    ],
    "change": {
     "delta": 80,
-    "lastDate": "2026-11-12"
+    "lastDate": "2026-11-23"
    },
    "isNew": false
   },
@@ -802,38 +857,30 @@
    "region": "서울 강남",
    "price": 5190,
    "firstPrice": 5190,
-   "registered": "2026-11-22",
+   "registered": "46348",
    "status": "판매중",
    "note": "선루프·전자서스·어라운드뷰·2열통풍·마사지·HUD 풀옵션, 3.3만km 고주행 감가 — 3행 전북(5,070만·27,577km)보다 120만 높지만 서울 강남 소재·연식 1개월 최신, 29행 대구(5,290만·16,604km)보다 100만 저렴(주행 1.7만km 많음). 최초 광고 11/2로 오래됐지만 목록 하단이라 그간 미포착 (11/22 17시 신규 등재)",
    "url": "https://fem.encar.com/cars/detail/43076514",
-   "photos": [
-    "https://ci.encar.com/carpicture/carpicture06/pic4306/43068796_002.jpg",
-    "https://ci.encar.com/carpicture/carpicture06/pic4306/43068796_003.jpg",
-    "https://ci.encar.com/carpicture/carpicture06/pic4306/43068796_004.jpg",
-    "https://ci.encar.com/carpicture/carpicture06/pic4306/43068796_005.jpg",
-    "https://ci.encar.com/carpicture/carpicture06/pic4306/43068796_006.jpg"
-   ],
+   "photos": [],
    "options": {
     "sunroof": true,
-    "aroundView": true,
-    "hud": true,
-    "ecs": true,
-    "vent2": true,
-    "massage": true
+    "aroundView": false,
+    "hud": false,
+    "ecs": false,
+    "vent2": false,
+    "massage": false
    },
    "listPrice": 6186,
-   "registeredAd": "2026-11-02T16:17:17",
-   "dealer": "서울 강남구 헌릉로745길 25",
    "depreciation": 16.1,
    "priceHistory": [
     {
-     "date": "2026-11-22",
+     "date": "46348",
      "time": null,
      "price": 5190
     }
    ],
    "change": null,
-   "isNew": true
+   "isNew": false
   },
   {
    "id": "42520349",
@@ -849,7 +896,7 @@
    "region": "경기 용인",
    "price": 5250,
    "firstPrice": 5350,
-   "registered": "2026-11-16",
+   "registered": "46342",
    "status": "판매중",
    "note": "엔카진단++, 완전무사고, 전자제어서스펜션·어라운드뷰·HUD, 로버스트 에메랄드, 선루프 없음 (11/16 시트 신규 추가 / 11/17 12:36 5,300만 원 50만 인하 / 11/18 5,290만 10만 추가 인하 / 11/19 5,250만 40만 추가 인하, 기존 5,350만원)",
    "url": "https://fem.encar.com/cars/detail/42520349",
@@ -874,11 +921,6 @@
    "depreciation": 15.1,
    "priceHistory": [
     {
-     "date": "2026-11-16",
-     "time": null,
-     "price": 5350
-    },
-    {
      "date": "2026-11-17",
      "time": "12:36",
      "price": 5300
@@ -892,11 +934,21 @@
      "date": "2026-11-19",
      "time": null,
      "price": 5250
+    },
+    {
+     "date": "46342",
+     "time": null,
+     "price": 5350
+    },
+    {
+     "date": "2026-11-23",
+     "time": null,
+     "price": 5250
     }
    ],
    "change": {
-    "delta": -40,
-    "lastDate": "2026-11-19"
+    "delta": -100,
+    "lastDate": "2026-11-23"
    },
    "isNew": false
   },
@@ -914,7 +966,7 @@
    "region": "경기 수원 권선",
    "price": 5250,
    "firstPrice": 5250,
-   "registered": "2026-11-16",
+   "registered": "46342",
    "status": "판매중",
    "note": "선루프·어라운드뷰·HUD, 전자서스 없음, 엔카진단+ (11/16 시트 신규 추가)",
    "url": "https://fem.encar.com/cars/detail/43146035",
@@ -939,7 +991,7 @@
    "depreciation": 15.1,
    "priceHistory": [
     {
-     "date": "2026-11-16",
+     "date": "46342",
      "time": null,
      "price": 5250
     }
@@ -961,7 +1013,7 @@
    "region": "대구",
    "price": 5290,
    "firstPrice": 5290,
-   "registered": "2026-11-18",
+   "registered": "46344",
    "status": "판매중",
    "note": "2WD 캘리그래피 1.66만km 풀옵션(선루프·전자서스·어라운드뷰·2열통풍·마사지·HUD), 엔카믿고, 11/17 22:55 수정·신규 포착 (11/18 신규 추가)",
    "url": "https://fem.encar.com/cars/detail/42925072",
@@ -986,7 +1038,7 @@
    "depreciation": 14.5,
    "priceHistory": [
     {
-     "date": "2026-11-18",
+     "date": "46344",
      "time": null,
      "price": 5290
     }
@@ -1055,7 +1107,7 @@
    "region": "경기 수원 권선",
    "price": 5330,
    "firstPrice": 5330,
-   "registered": "2026-11-19",
+   "registered": "46345",
    "status": "판매중",
    "note": "4WD 캘리그래피 최저가(8행 5,450만보다 120만 저렴), 엔카믿고·엔카진단++ 무사고, 선루프·어라운드뷰·2열통풍·마사지·HUD O·전자서스 X, 4.06만km 고주행 감가, 최초등록 10/30 14:29 (11/19 발굴)",
    "url": "https://fem.encar.com/cars/detail/43061039",
@@ -1080,7 +1132,7 @@
    "depreciation": 16.9,
    "priceHistory": [
     {
-     "date": "2026-11-19",
+     "date": "46345",
      "time": null,
      "price": 5330
     }
@@ -1102,7 +1154,7 @@
    "region": "인천 서구",
    "price": 5350,
    "firstPrice": 5400,
-   "registered": "2026-11-18",
+   "registered": "46344",
    "status": "판매중",
    "note": "4WD 캘리 최저가권, 어라운드뷰·전자서스 O·선루프 X, 3.3만km. 최초등록 9/18 (11/19 09시 엔카 매물 삭제로 완판 처리 → 같은 날 17:38 재등록(reRegistered)으로 판매중 복귀, 5,400→5,350만 50만 인하)",
    "url": "https://fem.encar.com/cars/detail/42764933",
@@ -1127,7 +1179,7 @@
    "depreciation": 16.6,
    "priceHistory": [
     {
-     "date": "2026-11-18",
+     "date": "2026-11-19",
      "time": null,
      "price": 5400
     },
@@ -1135,11 +1187,21 @@
      "date": "2026-11-19",
      "time": null,
      "price": 5350
+    },
+    {
+     "date": "46344",
+     "time": null,
+     "price": 5400
+    },
+    {
+     "date": "2026-11-23",
+     "time": null,
+     "price": 5350
     }
    ],
    "change": {
     "delta": -50,
-    "lastDate": "2026-11-19"
+    "lastDate": "2026-11-23"
    },
    "isNew": false
   },
@@ -1157,7 +1219,7 @@
    "region": "충남",
    "price": 5380,
    "firstPrice": 5400,
-   "registered": "2026-11-03",
+   "registered": "46329",
    "status": "판매중",
    "note": "4륜 캘리그래피, 선루프 없음 확정 (11/4 5,370만 인하→11/5 5,470만 인상→11/6 5,390만 재인하→11/9 5,490만 재인상→11/11 5,400만 재인하→11/14 5,370만 30만 인하→11/18 5,450만 80만 인상, 11/16 엔카 옵션·상세페이지 대조로 선루프X 정정)→11/21 17시 5,380만 70만 인하",
    "url": "https://fem.encar.com/cars/detail/42703338",
@@ -1181,11 +1243,6 @@
    "dealer": "충남 아산시",
    "depreciation": 16.1,
    "priceHistory": [
-    {
-     "date": "2026-11-03",
-     "time": null,
-     "price": 5400
-    },
     {
      "date": "2026-11-04",
      "time": null,
@@ -1225,11 +1282,21 @@
      "date": "2026-11-21",
      "time": null,
      "price": 5380
+    },
+    {
+     "date": "46329",
+     "time": null,
+     "price": 5400
+    },
+    {
+     "date": "2026-11-23",
+     "time": null,
+     "price": 5380
     }
    ],
    "change": {
-    "delta": -70,
-    "lastDate": "2026-11-21"
+    "delta": -20,
+    "lastDate": "2026-11-23"
    },
    "isNew": false
   },
@@ -1247,7 +1314,7 @@
    "region": "경기 일산",
    "price": 5390,
    "firstPrice": 5390,
-   "registered": "2026-11-14",
+   "registered": "46340",
    "status": "판매중",
    "note": "케이카 직영, 완전무사고, 프리뷰 전자제어서스펜션+빌트인캠2 Plus+사이드스텝+HUD+어라운드뷰, 선루프 없음 (11/14 신규 추가)",
    "url": "https://www.kcar.com/bc/detail/carInfoDtl?i_sCarCd=EC61433905",
@@ -1277,7 +1344,7 @@
    "depreciation": 12.9,
    "priceHistory": [
     {
-     "date": "2026-11-14",
+     "date": "46340",
      "time": null,
      "price": 5390
     }
@@ -1299,7 +1366,7 @@
    "region": "서울 강서",
    "price": 5450,
    "firstPrice": 5450,
-   "registered": "2026-11-16",
+   "registered": "46342",
    "status": "판매중",
    "note": "엔카진단++ 우수등급, 1인소유·완전무사고, 어라운드뷰·HUD, 선루프 없음(엔카 실차 옵션 확인) (11/16 시트 신규 추가)",
    "url": "https://fem.encar.com/cars/detail/42375136",
@@ -1324,7 +1391,7 @@
    "depreciation": 15.0,
    "priceHistory": [
     {
-     "date": "2026-11-16",
+     "date": "46342",
      "time": null,
      "price": 5450
     }
@@ -1346,7 +1413,7 @@
    "region": "대전 유성",
    "price": 5500,
    "firstPrice": 5500,
-   "registered": "2026-11-20",
+   "registered": "46346",
    "status": "판매중",
    "note": "26/05식 2,079km 준신차 2WD 캘리, 어라운드뷰·HUD·2열통풍·마사지 O, 전자서스·선루프 X, 최초등록 11/19 10:21 — 17행(5,250만·25/07·9,058km·전자서스O)보다 250만 높지만 연식 10개월·주행 7,000km 적음 (11/20 17시 발굴)",
    "url": "https://fem.encar.com/cars/detail/43177491",
@@ -1371,13 +1438,13 @@
    "depreciation": 11.1,
    "priceHistory": [
     {
-     "date": "2026-11-20",
+     "date": "46346",
      "time": null,
      "price": 5500
     }
    ],
    "change": null,
-   "isNew": true
+   "isNew": false
   },
   {
    "id": "EC61431144",
@@ -1393,7 +1460,7 @@
    "region": "인천",
    "price": 5540,
    "firstPrice": 5540,
-   "registered": "2026-11-18",
+   "registered": "46344",
    "status": "판매중",
    "note": "케이카 인천직영(EC61431144), 선루프·전자서스·어라운드뷰·HUD·마사지시트 풀옵션, 1인소유(인천 연수→법인 이전), 카히스토리 대물 1건 311만원·자차 손해 0·리콜 1건, 11/15 5,590만→11/18 5,540만, 11/18 케이카 목록 신규 등재",
    "url": "https://www.kcar.com/bc/detail/carInfoDtl?i_sCarCd=EC61431144",
@@ -1453,7 +1520,7 @@
    "region": "경기 수원",
    "price": 5580,
    "firstPrice": 5620,
-   "registered": "2026-11-14",
+   "registered": "46340",
    "status": "판매중",
    "note": "엔카진단++, 무사고, 보험이력0원, 전자제어서스펜션+선루프+빌트인캠+브라운시트 (11/14 신규 추가 / 11/20 14:26 5,620→5,580만 40만 인하)",
    "url": "https://fem.encar.com/cars/detail/43115328",
@@ -1478,19 +1545,29 @@
    "depreciation": 13.0,
    "priceHistory": [
     {
-     "date": "2026-11-14",
-     "time": null,
+     "date": "2026-11-20",
+     "time": "14:26",
      "price": 5620
     },
     {
      "date": "2026-11-20",
      "time": "14:26",
      "price": 5580
+    },
+    {
+     "date": "46340",
+     "time": null,
+     "price": 5620
+    },
+    {
+     "date": "2026-11-23",
+     "time": null,
+     "price": 5580
     }
    ],
    "change": {
     "delta": -40,
-    "lastDate": "2026-11-20"
+    "lastDate": "2026-11-23"
    },
    "isNew": false
   },
@@ -1508,38 +1585,30 @@
    "region": "인천 미추홀",
    "price": 5590,
    "firstPrice": 5590,
-   "registered": "2026-11-20",
+   "registered": "46346",
    "status": "판매중",
    "note": "25/11식 최신 연식 4WD 캘리, 선루프·어라운드뷰·HUD·2열통풍·마사지 O·전자서스 X, 엔카진단+ 무사고, 1.97만km — 19행(5,649만·25/08·8,367km)보다 59만 저렴(주행 1.1만km 많음) (11/20 발굴, 최초등록 11/19 15:34)",
    "url": "https://fem.encar.com/cars/detail/43188837",
-   "photos": [
-    "https://ci.encar.com/carpicture/carpicture08/pic4318/43184975_001.jpg",
-    "https://ci.encar.com/carpicture/carpicture08/pic4318/43184975_002.jpg",
-    "https://ci.encar.com/carpicture/carpicture08/pic4318/43184975_003.jpg",
-    "https://ci.encar.com/carpicture/carpicture08/pic4318/43184975_004.jpg",
-    "https://ci.encar.com/carpicture/carpicture08/pic4318/43184975_005.jpg"
-   ],
+   "photos": [],
    "options": {
     "sunroof": true,
-    "aroundView": true,
-    "hud": true,
+    "aroundView": false,
+    "hud": false,
     "ecs": false,
-    "vent2": true,
-    "massage": true
+    "vent2": false,
+    "massage": false
    },
    "listPrice": 6414,
-   "registeredAd": "2026-11-19T15:34:47",
-   "dealer": "인천 미추홀구 염전로 381",
    "depreciation": 12.8,
    "priceHistory": [
     {
-     "date": "2026-11-20",
+     "date": "46346",
      "time": null,
      "price": 5590
     }
    ],
    "change": null,
-   "isNew": true
+   "isNew": false
   },
   {
    "id": "42980334",
@@ -1555,7 +1624,7 @@
    "region": "충남 천안",
    "price": 5599,
    "firstPrice": 5599,
-   "registered": "2026-11-18",
+   "registered": "46344",
    "status": "판매중",
    "note": "4WD 풀옵션(선루프·전자서스·어라운드뷰·HUD·2열통풍), 9,744km, 최초등록 10/22 (11/18 발굴)",
    "url": "https://fem.encar.com/cars/detail/42980334",
@@ -1580,7 +1649,7 @@
    "depreciation": 12.7,
    "priceHistory": [
     {
-     "date": "2026-11-18",
+     "date": "46344",
      "time": null,
      "price": 5599
     }
@@ -1602,32 +1671,24 @@
    "region": "경기",
    "price": 5600,
    "firstPrice": 5600,
-   "registered": "2026-11-18",
+   "registered": "46344",
    "status": "판매중",
    "note": "4WD 캘리그래피 풀옵션(선루프·전자서스·어라운드뷰·2열통풍·마사지·HUD), 완전무사고 자평, 2.7만km, 11/17 14:36 신규 등록 (11/18 신규 추가)",
    "url": "https://fem.encar.com/cars/detail/43164301",
-   "photos": [
-    "https://ci.encar.com/carpicture/carpicture06/pic4316/43164299_002.jpg",
-    "https://ci.encar.com/carpicture/carpicture06/pic4316/43164299_003.jpg",
-    "https://ci.encar.com/carpicture/carpicture06/pic4316/43164299_004.jpg",
-    "https://ci.encar.com/carpicture/carpicture06/pic4316/43164299_005.jpg",
-    "https://ci.encar.com/carpicture/carpicture06/pic4316/43164299_006.jpg"
-   ],
+   "photos": [],
    "options": {
     "sunroof": true,
-    "aroundView": true,
-    "hud": true,
-    "ecs": true,
-    "vent2": true,
-    "massage": true
+    "aroundView": false,
+    "hud": false,
+    "ecs": false,
+    "vent2": false,
+    "massage": false
    },
    "listPrice": 6414,
-   "registeredAd": "2026-11-17T14:36:52",
-   "dealer": "경기 안산시 단원구 원포공원1로 16",
    "depreciation": 12.7,
    "priceHistory": [
     {
-     "date": "2026-11-18",
+     "date": "46344",
      "time": null,
      "price": 5600
     }
@@ -1649,7 +1710,7 @@
    "region": "서울 강서",
    "price": 5630,
    "firstPrice": 5630,
-   "registered": "2026-11-20",
+   "registered": "46346",
    "status": "판매중",
    "note": "4WD 캘리 풀옵션(선루프·전자서스·어라운드뷰·2열통풍·마사지·HUD), 엔카진단++ 무사고, 1.01만km — 19행(5,649만·25/08·8,367km·전자서스X)보다 19만 저렴하면서 전자서스 포함, 12행(5,690만·25/05·16,882km)보다 60만 저렴 (11/20 발굴, 최초등록 11/19 15:25)",
    "url": "https://fem.encar.com/cars/detail/43187014",
@@ -1674,13 +1735,13 @@
    "depreciation": 12.2,
    "priceHistory": [
     {
-     "date": "2026-11-20",
+     "date": "46346",
      "time": null,
      "price": 5630
     }
    ],
    "change": null,
-   "isNew": true
+   "isNew": false
   },
   {
    "id": "43116187",
@@ -1696,7 +1757,7 @@
    "region": "경기 수원 권선",
    "price": 5649,
    "firstPrice": 5649,
-   "registered": "2026-11-16",
+   "registered": "46342",
    "status": "판매중",
    "note": "1인신조·보험이력0원·키2, 선루프·어라운드뷰·HUD, 발판·빌트인캠, 엔카진단+, 전자서스 없음 (11/16 시트 신규 추가)",
    "url": "https://fem.encar.com/cars/detail/43116187",
@@ -1721,7 +1782,7 @@
    "depreciation": 11.9,
    "priceHistory": [
     {
-     "date": "2026-11-16",
+     "date": "46342",
      "time": null,
      "price": 5649
     }
@@ -1743,7 +1804,7 @@
    "region": "경기 수원",
    "price": 5650,
    "firstPrice": 5650,
-   "registered": "2026-11-18",
+   "registered": "46344",
    "status": "판매중",
    "note": "케이카 수원직영(EC61439154), 어라운드뷰·HUD·2열통풍, 선루프·전자서스 없음, 케이카 자체 '단순수리' 판정(카히스토리 사고 0건), 동급 4WD 캘리 대비 옵션 대비 가격 높음, 11/18 신규 등재",
    "url": "https://www.kcar.com/bc/detail/carInfoDtl?i_sCarCd=EC61439154",
@@ -1773,7 +1834,7 @@
    "depreciation": 11.9,
    "priceHistory": [
     {
-     "date": "2026-11-18",
+     "date": "46344",
      "time": null,
      "price": 5650
     }
@@ -1795,7 +1856,7 @@
    "region": "전남광주",
    "price": 5650,
    "firstPrice": 5650,
-   "registered": "2026-11-20",
+   "registered": "46346",
    "status": "판매중",
    "note": "26/06식 954km 사실상 신차급 2WD 캘리, 어라운드뷰·전자서스·HUD·2열통풍·마사지 O, 선루프 X, 최초등록 11/20 13:49 — 39행(5,950만·26/08·2,630km)보다 300만 저렴, 41행(5,590만·25/11·19,693km)보다 연식 최신 (11/20 17시 발굴)",
    "url": "https://fem.encar.com/cars/detail/43188716",
@@ -1820,13 +1881,13 @@
    "depreciation": 8.7,
    "priceHistory": [
     {
-     "date": "2026-11-20",
+     "date": "46346",
      "time": null,
      "price": 5650
     }
    ],
    "change": null,
-   "isNew": true
+   "isNew": false
   },
   {
    "id": "42764891",
@@ -1842,7 +1903,7 @@
    "region": "대구",
    "price": 5670,
    "firstPrice": 5690,
-   "registered": "2026-11-03",
+   "registered": "46329",
    "status": "판매중",
    "note": "1.6만km 주행, 4륜 캘리그래피 탄탄한 기본기, 선루프·전자제어서스펜션·어라운드뷰·HUD (11/16 선루프 표기 정정) (11/21 09시 5,670만 20만 인하, 기존 5,690만원)",
    "url": "https://fem.encar.com/cars/detail/42764891",
@@ -1862,24 +1923,29 @@
     "massage": true
    },
    "listPrice": 6414,
-   "registeredAd": "2026-09-21T15:47:50",
+   "registeredAd": "2026-11-21T21:30:36",
    "dealer": "대구 북구 노원로 115",
    "depreciation": 11.6,
    "priceHistory": [
     {
-     "date": "2026-11-03",
+     "date": "2026-11-21",
+     "time": null,
+     "price": 5670
+    },
+    {
+     "date": "46329",
      "time": null,
      "price": 5690
     },
     {
-     "date": "2026-11-21",
+     "date": "2026-11-23",
      "time": null,
      "price": 5670
     }
    ],
    "change": {
     "delta": -20,
-    "lastDate": "2026-11-21"
+    "lastDate": "2026-11-23"
    },
    "isNew": false
   },
@@ -1897,7 +1963,7 @@
    "region": "경기 수원 권선",
    "price": 5699,
    "firstPrice": 5699,
-   "registered": "2026-11-18",
+   "registered": "46344",
    "status": "판매중",
    "note": "풀옵션. 13행(5,720·25/08 21,092km) 대비 21만 저렴. 최초등록 10/14",
    "url": "https://fem.encar.com/cars/detail/42912785",
@@ -1922,7 +1988,7 @@
    "depreciation": 11.1,
    "priceHistory": [
     {
-     "date": "2026-11-18",
+     "date": "46344",
      "time": null,
      "price": 5699
     }
@@ -1944,7 +2010,7 @@
    "region": "경기",
    "price": 5720,
    "firstPrice": 5750,
-   "registered": "2026-11-03",
+   "registered": "46329",
    "status": "판매중",
    "note": "2.1만km 주행, 4륜 캘리그래피, 엔카홈서비스, 선루프·전자제어서스펜션·어라운드뷰 (11/14 5,720만 30만 인하, 기존 5,750만원, 11/16 선루프 표기 정정)",
    "url": "https://fem.encar.com/cars/detail/42802409",
@@ -1969,19 +2035,24 @@
    "depreciation": 10.8,
    "priceHistory": [
     {
-     "date": "2026-11-03",
+     "date": "2026-11-14",
+     "time": null,
+     "price": 5720
+    },
+    {
+     "date": "46329",
      "time": null,
      "price": 5750
     },
     {
-     "date": "2026-11-14",
+     "date": "2026-11-23",
      "time": null,
      "price": 5720
     }
    ],
    "change": {
     "delta": -30,
-    "lastDate": "2026-11-14"
+    "lastDate": "2026-11-23"
    },
    "isNew": false
   },
@@ -1999,7 +2070,7 @@
    "region": "부산",
    "price": 5760,
    "firstPrice": 5760,
-   "registered": "2026-11-18",
+   "registered": "46344",
    "status": "판매중",
    "note": "케이카 부산직영(EC61423916), 무사고·1인소유(밀양→법인 이전)·카히스토리 사고 0건, 선루프·전자서스·어라운드뷰·HUD 완비, 1.55만km 최저주행, 대구 동급(16,882km·5,690만) 대비 70만 높음, 11/18 신규 등재",
    "url": "https://www.kcar.com/bc/detail/carInfoDtl?i_sCarCd=EC61423916",
@@ -2029,7 +2100,7 @@
    "depreciation": 10.2,
    "priceHistory": [
     {
-     "date": "2026-11-18",
+     "date": "46344",
      "time": null,
      "price": 5760
     }
@@ -2051,7 +2122,7 @@
    "region": "전남광주",
    "price": 5850,
    "firstPrice": 5850,
-   "registered": "2026-11-18",
+   "registered": "46344",
    "status": "판매중",
    "note": "25/12식 7,370km 풀옵션, 최초등록 11/13. 광주 소재로 거리 부담",
    "url": "https://fem.encar.com/cars/detail/43145724",
@@ -2076,7 +2147,7 @@
    "depreciation": 8.8,
    "priceHistory": [
     {
-     "date": "2026-11-18",
+     "date": "46344",
      "time": null,
      "price": 5850
     }
@@ -2158,7 +2229,7 @@
    "region": "경기 의정부",
    "price": 5950,
    "firstPrice": 5950,
-   "registered": "2026-11-19",
+   "registered": "46345",
    "status": "판매중",
    "note": "26/08식 2,630km 준신차급 4WD 풀옵션(전자서스·선루프·어라운드뷰·HUD·마사지), 엔카믿고·엔카진단++ 무사고, 신차 6,414만 대비 464만 저렴 — 예산(5,000만) 상회하는 최신 매물로 참고 추적 (11/19 발굴, 최초등록 10/14)",
    "url": "https://fem.encar.com/cars/detail/42903716",
@@ -2183,7 +2254,7 @@
    "depreciation": 7.2,
    "priceHistory": [
     {
-     "date": "2026-11-19",
+     "date": "46345",
      "time": null,
      "price": 5950
     }
