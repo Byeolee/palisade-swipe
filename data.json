@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-11-23T17:27",
+ "generatedAt": "2026-11-24T09:42",
  "source": "구글 시트 \"팰리세이드 HEV 중고 매매 트래커\" + 엔카/케이카 상세 API",
- "count": 42,
+ "count": 41,
  "listings": [
   {
    "id": "43189480",
@@ -1219,7 +1219,7 @@
    "firstPrice": 5400,
    "registered": "2026-11-03",
    "status": "판매중",
-   "note": "4륜 캘리그래피, 선루프 없음 확정 (11/4 5,370만 인하→11/5 5,470만 인상→11/6 5,390만 재인하→11/9 5,490만 재인상→11/11 5,400만 재인하→11/14 5,370만 30만 인하→11/18 5,450만 80만 인상, 11/16 엔카 옵션·상세페이지 대조로 선루프X 정정)→11/21 17시 5,380만 70만 인하",
+   "note": "4륜 캘리그래피, 선루프 없음 확정 (11/4 5,370만 인하→11/5 5,470만 인상→11/6 5,390만 재인하→11/9 5,490만 재인상→11/11 5,400만 재인하→11/14 5,370만 30만 인하→11/18 5,450만 80만 인상, 11/16 엔카 옵션·상세페이지 대조로 선루프X 정정)→11/21 17시 5,380만 70만 인하 (11/24 09시 엔카 상세 '계약중' 확인 — 5,380만원 유지, 11/23 16:21 수정)",
    "url": "https://fem.encar.com/cars/detail/42703338",
    "photos": [
     "https://ci.encar.com/carpicture/carpicture10/pic4270/42702377_002.jpg",
@@ -1496,61 +1496,6 @@
    "change": {
     "delta": -50,
     "lastDate": "2026-11-18"
-   },
-   "isNew": false
-  },
-  {
-   "id": "43115328",
-   "source": "encar",
-   "trim": "캘리그래피",
-   "title": "팰리세이드(LX3) HEV 2.5T 캘리그래피",
-   "drive": "4WD",
-   "seats": "9인승",
-   "sunroof": true,
-   "yearMonth": "25/09",
-   "km": 13984,
-   "color": "블랙",
-   "region": "경기 수원",
-   "price": 5580,
-   "firstPrice": 5620,
-   "registered": "2026-11-14",
-   "status": "판매중",
-   "note": "엔카진단++, 무사고, 보험이력0원, 전자제어서스펜션+선루프+빌트인캠+브라운시트 (11/14 신규 추가 / 11/20 14:26 5,620→5,580만 40만 인하) (11/23 09시 엔카 상세 '계약중' 표시 확인 — 계약 진행 중, 가격 5,580만원 유지) (11/23 17시 계약중 유지·가격 변동 없음)",
-   "url": "https://fem.encar.com/cars/detail/43115328",
-   "photos": [
-    "https://ci.encar.com/carpicture/carpicture01/pic4311/43115328_002.jpg",
-    "https://ci.encar.com/carpicture/carpicture01/pic4311/43115328_003.jpg",
-    "https://ci.encar.com/carpicture/carpicture01/pic4311/43115328_004.jpg",
-    "https://ci.encar.com/carpicture/carpicture01/pic4311/43115328_005.jpg",
-    "https://ci.encar.com/carpicture/carpicture01/pic4311/43115328_006.jpg"
-   ],
-   "options": {
-    "sunroof": true,
-    "aroundView": true,
-    "hud": true,
-    "ecs": true,
-    "vent2": true,
-    "massage": true
-   },
-   "listPrice": 6414,
-   "registeredAd": "2026-11-09T11:26:34",
-   "dealer": "경기 수원시 권선구",
-   "depreciation": 13.0,
-   "priceHistory": [
-    {
-     "date": "2026-11-14",
-     "time": null,
-     "price": 5620
-    },
-    {
-     "date": "2026-11-20",
-     "time": "14:26",
-     "price": 5580
-    }
-   ],
-   "change": {
-    "delta": -40,
-    "lastDate": "2026-11-20"
    },
    "isNew": false
   },
@@ -2062,11 +2007,11 @@
    "km": 15506,
    "color": "화이트",
    "region": "부산",
-   "price": 5760,
+   "price": 5720,
    "firstPrice": 5760,
    "registered": "2026-11-18",
    "status": "판매중",
-   "note": "케이카 부산직영(EC61423916), 무사고·1인소유(밀양→법인 이전)·카히스토리 사고 0건, 선루프·전자서스·어라운드뷰·HUD 완비, 1.55만km 최저주행, 대구 동급(16,882km·5,690만) 대비 70만 높음, 11/18 신규 등재",
+   "note": "케이카 부산직영(EC61423916), 무사고·1인소유(밀양→법인 이전)·카히스토리 사고 0건, 선루프·전자서스·어라운드뷰·HUD 완비, 1.55만km 최저주행, 대구 동급(16,882km·5,690만) 대비 70만 높음, 11/18 신규 등재 (11/24 09시 5,760→5,720만 40만 인하)",
    "url": "https://www.kcar.com/bc/detail/carInfoDtl?i_sCarCd=EC61423916",
    "photos": [
     "https://img.kcar.com/carpicture/carpicture02/pic6142/kcar_61423916_001.jpg",
@@ -2091,15 +2036,23 @@
     "other": "0",
     "otherAmount": "0"
    },
-   "depreciation": 10.2,
+   "depreciation": 10.8,
    "priceHistory": [
     {
      "date": "2026-11-18",
      "time": null,
      "price": 5760
+    },
+    {
+     "date": "2026-11-24",
+     "time": null,
+     "price": 5720
     }
    ],
-   "change": null,
+   "change": {
+    "delta": -40,
+    "lastDate": "2026-11-24"
+   },
    "isNew": false
   },
   {
@@ -2207,7 +2160,7 @@
     "delta": 50,
     "lastDate": "2026-11-21"
    },
-   "isNew": true
+   "isNew": false
   },
   {
    "id": "42903716",
