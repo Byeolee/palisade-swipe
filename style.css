@@ -208,6 +208,14 @@ button, a { font-family: inherit; }
   color: #c9d2e0;
   border: 3px solid #c9d2e0;
 }
+.skip-stamp {
+  top: 18px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-6deg);
+  color: #f0a13c;
+  border: 3px solid #f0a13c;
+  background: rgba(11, 13, 18, .28);
+}
 
 /* ── front ──────────────────────────────── */
 .photo {
@@ -559,7 +567,7 @@ button, a { font-family: inherit; }
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 22px;
+  gap: 18px;
   padding: 12px 0 6px;
 }
 .act {
@@ -579,6 +587,14 @@ button, a { font-family: inherit; }
 .act:disabled { opacity: .3; }
 .act.undo { width: 46px; height: 46px; font-size: 17px; color: var(--muted); }
 .act.pass { color: #d5dde9; }
+.act.skip {
+  color: #f0a13c;
+  border-color: rgba(240, 161, 60, .42);
+  background: rgba(240, 161, 60, .1);
+  font-size: 21px;
+  line-height: 1;
+  padding-bottom: 3px;
+}
 .act.like {
   color: var(--like);
   border-color: rgba(255, 77, 109, .4);
@@ -638,7 +654,7 @@ button, a { font-family: inherit; }
 .empty-icon { font-size: 40px; opacity: .8; }
 .empty h2 { margin: 4px 0 0; font-size: 18px; font-weight: 800; }
 .empty p { margin: 0; font-size: 12.5px; color: var(--dim); line-height: 1.5; }
-.empty-actions { display: flex; gap: 8px; margin-top: 14px; }
+.empty-actions { display: flex; gap: 8px; margin-top: 14px; flex-wrap: wrap; justify-content: center; }
 .ghost {
   border: 1px solid var(--line);
   background: var(--panel);
@@ -783,6 +799,7 @@ button, a { font-family: inherit; }
 /* swipe fly-out */
 .card.fly-left { transition: transform .28s ease-out; }
 .card.fly-right { transition: transform .28s ease-out; }
+.card.fly-up { transition: transform .3s cubic-bezier(.3, .1, .6, 1); }
 
 @media (max-height: 700px) {
   .price { font-size: 24px; }

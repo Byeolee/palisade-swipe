@@ -15,6 +15,9 @@
   let undoStack = [];
   let busy = false;
   let flippedId = null;
+  /* '넘기기'는 이번 세션에서만 유효하다. localStorage에는 절대 저장하지 않는다
+     (새로고침하면 sessionSkips가 비어 있어 넘긴 카드가 다시 앞에 나온다). */
+  let sessionSkips = new Set();
 
   const state = {
     likes: {},   // id -> { t, price }
@@ -30,8 +33,8 @@
     actions: $('#actions'), likeCount: $('#likeCount'), stage: $('#stage'),
     likesView: $('#likesView'), lvList: $('#lvList'), lvCount: $('#lvCount'), lvEmpty: $('#lvEmpty'),
     lvCompare: $('#lvCompare'), lvCompareToggle: $('#lvCompareToggle'),
-    btnUndo: $('#btnUndo'), btnLike: $('#btnLike'), btnPass: $('#btnPass'),
-    emptyUndo: $('#emptyUndo'), emptyReset: $('#emptyReset'), emptyClearPass: $('#emptyClearPass'),
+    btnUndo: $('#btnUndo'), btnLike: $('#btnLike'), btnPass: $('#btnPass'), btnSkip: $('#btnSkip'),
+    emptyUndo: $('#emptyUndo'), emptySkip: $('#emptySkip'), emptyReset: $('#emptyReset'), emptyClearPass: $('#emptyClearPass'),
     lvClear: $('#lvClear'), lvBack: $('#lvBack'),
   };
 
@@ -93,7 +96,13 @@
 
   function available(key) {
     const test = filterFn(key);
-    return listings.filter((x) => test(x) && !state.likes[x.id] && !state.passes[x.id]);
+    return listings.filter((x) => test(x) && !state.likes[x.id] && !state.passes[x.id] && !sessionSkips.has(x.id));
+  }
+
+  /* 이번 세션에 넘겨서 지금 덱에서 빠져 있는 카드 (현재 필터 기준) */
+  function sessionSkipsIn(key) {
+    const test = filterFn(key);
+    return listings.filter((x) => test(x) && sessionSkips.has(x.id) && !state.likes[x.id] && !state.passes[x.id]);
   }
 
   /* ── deck ────────────────────────────── */
@@ -114,11 +123,12 @@
     }).join('');
 
     const deck = available(state.filter);
-    const total = listings.filter((x) => !state.likes[x.id] && !state.passes[x.id]).length;
+    const total = listings.filter((x) => !state.likes[x.id] && !state.passes[x.id] && !sessionSkips.has(x.id)).length;
     const fname = (FILTERS.find((f) => f.key === state.filter) || FILTERS[0]).label;
+    const skipNote = sessionSkips.size ? ` · 넘김 <b>${sessionSkips.size}</b>` : '';
     el.deckline.innerHTML = state.filter === 'all'
-      ? `전체 <b>${listings.length}</b>대 중 <b>${deck.length}</b>대 남음 · 찜 <b>${Object.keys(state.likes).length}</b>`
-      : `<b>${fname}</b> · 남은 카드 <b>${deck.length}</b>대 · 전체 <b>${total}</b>대 남음`;
+      ? `전체 <b>${listings.length}</b>대 중 <b>${deck.length}</b>대 남음 · 찜 <b>${Object.keys(state.likes).length}</b>${skipNote}`
+      : `<b>${fname}</b> · 남은 카드 <b>${deck.length}</b>대 · 전체 <b>${total}</b>대 남음${skipNote}`;
   }
 
   function renderCounter() {
@@ -160,6 +170,9 @@
       }
       el.emptyUndo.hidden = !undoStack.length;
       el.emptyClearPass.hidden = passCount === 0;
+      const skipped = sessionSkipsIn(state.filter).length;
+      el.emptySkip.hidden = skipped === 0;
+      el.emptySkip.textContent = `넘긴 카드 다시 보기 (${skipped})`;
       el.actions.style.visibility = 'hidden';
       busy = false;
       flippedId = null;
@@ -393,11 +406,27 @@
 
     const TAP_MS = 400;   // 이 시간 안에 손을 떼야 '탭'으로 본다
     const TAP_SLOP = 9;   // 이 거리(px) 이상 움직이면 스크롤·드래그로 본다
+    const SWIPE = 88;     // 이 거리(px)를 넘기면 스와이프 확정 (좌우·위 공통)
 
     const stamps = () => ({
       like: card.querySelector('.like-stamp'),
       pass: card.querySelector('.pass-stamp'),
+      skip: card.querySelector('.skip-stamp'),
     });
+
+    const clearStamps = () => {
+      const s = stamps();
+      if (s.like) s.like.style.opacity = 0;
+      if (s.pass) s.pass.style.opacity = 0;
+      if (s.skip) s.skip.style.opacity = 0;
+    };
+
+    const resetCard = () => {
+      card.style.transition = 'transform .25s cubic-bezier(.2,.9,.3,1)';
+      card.style.transform = '';
+      clearStamps();
+      setTimeout(() => { card.style.transition = ''; }, 260);
+    };
 
     const flipToBack = () => {
       card.classList.add('flipped');
@@ -413,11 +442,11 @@
 
       if (card.classList.contains('flipped')) {
         // 뒷면: 짧은 탭이면 앞면 복귀. 세로 스크롤은 건드리지 않는다.
-        drag = { x: e.clientX, y: e.clientY, t: Date.now(), moved: false, id: e.pointerId, back: true };
+        drag = { x: e.clientX, y: e.clientY, t: Date.now(), moved: false, id: e.pointerId, back: true, mode: null };
         return;
       }
 
-      drag = { x: e.clientX, y: e.clientY, t: Date.now(), moved: false, id: e.pointerId, back: false };
+      drag = { x: e.clientX, y: e.clientY, t: Date.now(), moved: false, id: e.pointerId, back: false, mode: null };
       try { card.setPointerCapture(e.pointerId); } catch (_) {}
     });
 
@@ -428,16 +457,32 @@
 
       if (drag.back) {
         if (!drag.moved && (Math.abs(dx) > TAP_SLOP || Math.abs(dy) > TAP_SLOP)) drag.moved = true;
-        return; // 스크롤을 막지 않는다
+        return; // 뒷면은 스크롤을 막지 않는다 (위로 밀어도 넘기지 않음)
       }
 
       if (!drag.moved && Math.hypot(dx, dy) > 7) drag.moved = true;
       if (!drag.moved) return;
-      card.style.transform = `translate(${dx}px, ${dy * 0.28}px) rotate(${(dx / 24).toFixed(2)}deg)`;
+
+      // 처음 몇 px 움직임으로 방향을 정한다: 위쪽이 우세하면 '넘기기'
+      if (!drag.mode) {
+        if (Math.abs(dy) > 10 && Math.abs(dy) > Math.abs(dx)) drag.mode = dy < 0 ? 'up' : 'down';
+        else if (Math.abs(dx) > 10) drag.mode = 'side';
+      }
+
       const s = stamps();
-      const p = Math.min(1, Math.abs(dx) / 110);
-      if (dx > 0) { s.like.style.opacity = p; s.pass.style.opacity = 0; }
-      else { s.pass.style.opacity = p; s.like.style.opacity = 0; }
+      if (drag.mode === 'up') {
+        card.style.transform = `translate(${(dx * .3).toFixed(1)}px, ${dy.toFixed(1)}px) rotate(${(dx / 40).toFixed(2)}deg)`;
+        const p = Math.min(1, Math.abs(dy) / 120);
+        if (s.skip) s.skip.style.opacity = p;
+        s.like.style.opacity = 0;
+        s.pass.style.opacity = 0;
+      } else {
+        card.style.transform = `translate(${dx}px, ${dy * 0.28}px) rotate(${(dx / 24).toFixed(2)}deg)`;
+        const p = Math.min(1, Math.abs(dx) / 110);
+        if (s.skip) s.skip.style.opacity = 0;
+        if (dx > 0) { s.like.style.opacity = p; s.pass.style.opacity = 0; }
+        else { s.pass.style.opacity = p; s.like.style.opacity = 0; }
+      }
       e.preventDefault();
     });
 
@@ -448,6 +493,7 @@
       const dt = Date.now() - drag.t;
       const moved = drag.moved;
       const fromBack = drag.back;
+      const mode = drag.mode;
       drag = null;
 
       if (fromBack) {
@@ -462,14 +508,15 @@
         if (dt < TAP_MS) flipToBack();
         return;
       }
-      if (Math.abs(dx) > 88) {
+      if (mode === 'up') {
+        if (dy < -SWIPE) fly(card, 'up', 'skip');
+        else resetCard();
+        return;
+      }
+      if (Math.abs(dx) > SWIPE) {
         fly(card, dx > 0 ? 'right' : 'left', dx > 0 ? 'like' : 'pass');
       } else {
-        card.style.transition = 'transform .25s cubic-bezier(.2,.9,.3,1)';
-        card.style.transform = '';
-        const s = stamps();
-        s.like.style.opacity = 0; s.pass.style.opacity = 0;
-        setTimeout(() => { card.style.transition = ''; }, 260);
+        resetCard();
       }
     };
 
@@ -480,21 +527,22 @@
       const fromBack = drag.back;
       drag = null;
       if (fromBack) return;
-      card.style.transition = 'transform .2s ease-out';
-      card.style.transform = '';
-      const s = stamps();
-      s.like.style.opacity = 0; s.pass.style.opacity = 0;
-      setTimeout(() => { card.style.transition = ''; }, 220);
+      resetCard();
     });
   }
 
   function fly(card, dir, action) {
     if (busy) return;
     busy = true;
-    card.classList.add(dir === 'right' ? 'fly-right' : 'fly-left');
-    const stamp = card.querySelector(dir === 'right' ? '.like-stamp' : '.pass-stamp');
+    card.classList.add(dir === 'right' ? 'fly-right' : dir === 'left' ? 'fly-left' : 'fly-up');
+    const stamp = card.querySelector(
+      dir === 'right' ? '.like-stamp' : dir === 'left' ? '.pass-stamp' : '.skip-stamp');
     if (stamp) stamp.style.opacity = 1;
-    card.style.transform = `translate(${dir === 'right' ? '' : '-'}140%, ${dir === 'right' ? 40 : -30}px) rotate(${dir === 'right' ? 22 : -22}deg)`;
+    if (dir === 'up') {
+      card.style.transform = 'translateY(-135%) rotate(-4deg) scale(.97)';
+    } else {
+      card.style.transform = `translate(${dir === 'right' ? '' : '-'}140%, ${dir === 'right' ? 40 : -30}px) rotate(${dir === 'right' ? 22 : -22}deg)`;
+    }
     setTimeout(() => {
       commit(action);
       busy = false;
@@ -506,20 +554,27 @@
     const x = deck[0];
     if (!x) return;
     if (action === 'like') state.likes[x.id] = { t: Date.now(), price: x.price };
-    else state.passes[x.id] = Date.now();
+    else if (action === 'pass') state.passes[x.id] = Date.now();
+    else sessionSkips.add(x.id);   // 스킵은 세션 메모리에만
     undoStack.push({ id: x.id, action });
     if (undoStack.length > 40) undoStack.shift();
     flippedId = null;
-    save();
+    if (action !== 'skip') save();  // 스킵은 localStorage에 쓰지 않는다
     render();
   }
 
   function undo() {
     const last = undoStack.pop();
     if (!last) return;
-    if (last.action === 'like') delete state.likes[last.id];
-    else delete state.passes[last.id];
-    save();
+    if (last.action === 'like') {
+      delete state.likes[last.id];
+      save();
+    } else if (last.action === 'pass') {
+      delete state.passes[last.id];
+      save();
+    } else {
+      sessionSkips.delete(last.id);
+    }
     render();
   }
 
@@ -527,7 +582,9 @@
     if (busy) return;
     const card = el.deck.querySelector('.card.top');
     if (!card) return;
-    fly(card, action === 'like' ? 'right' : 'left', action);
+    if (action === 'like') fly(card, 'right', 'like');
+    else if (action === 'pass') fly(card, 'left', 'pass');
+    else fly(card, 'up', 'skip');
   }
 
   /* ── likes view ──────────────────────── */
@@ -609,8 +666,15 @@
 
   el.btnLike.addEventListener('click', () => triggerSwipe('like'));
   el.btnPass.addEventListener('click', () => triggerSwipe('pass'));
+  el.btnSkip.addEventListener('click', () => triggerSwipe('skip'));
   el.btnUndo.addEventListener('click', undo);
   el.emptyUndo.addEventListener('click', undo);
+  el.emptySkip.addEventListener('click', () => {
+    if (!sessionSkips.size) return;
+    sessionSkips.clear();
+    undoStack = undoStack.filter((u) => u.action !== 'skip');
+    render();
+  });
   el.emptyReset.addEventListener('click', () => {
     state.filter = 'all';
     save();
@@ -660,6 +724,7 @@
     if (state.tab !== 'deck') return;
     if (e.key === 'ArrowLeft') triggerSwipe('pass');
     if (e.key === 'ArrowRight') triggerSwipe('like');
+    if (e.key === 'ArrowUp') { e.preventDefault(); triggerSwipe('skip'); }
     if (e.key === ' ') { const c = el.deck.querySelector('.card.top'); if (c) c.classList.toggle('flipped'); }
   });
 

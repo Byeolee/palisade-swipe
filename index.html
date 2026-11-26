@@ -9,7 +9,7 @@
 <meta name="apple-mobile-web-app-title" content="팰리세이드 스와이프" />
 <meta name="description" content="디 올 뉴 팰리세이드 HEV 중고 매물을 틴더처럼 넘겨보는 카드 뷰" />
 <title>팰리세이드 HEV 매물 스와이프</title>
-<link rel="stylesheet" href="style.css?v=20261119c" />
+<link rel="stylesheet" href="style.css?v=20261126a" />
 </head>
 <body>
 <div id="app">
@@ -37,6 +37,7 @@
       <p id="emptyText">이 필터에서 남은 카드가 없습니다.</p>
       <div class="empty-actions">
         <button class="ghost" id="emptyUndo">↩ 되돌리기</button>
+        <button class="ghost" id="emptySkip" hidden>넘긴 카드 다시 보기</button>
         <button class="ghost" id="emptyReset">필터 초기화</button>
         <button class="ghost" id="emptyClearPass" hidden>패스 지우기</button>
       </div>
@@ -44,9 +45,10 @@
   </main>
 
   <div class="actions" id="actions">
-    <button class="act undo" id="btnUndo" aria-label="되돌리기">↩</button>
-    <button class="act pass" id="btnPass" aria-label="패스">✕</button>
-    <button class="act like" id="btnLike" aria-label="찜">♥</button>
+    <button class="act undo" id="btnUndo" aria-label="되돌리기" title="되돌리기">↩</button>
+    <button class="act pass" id="btnPass" aria-label="패스" title="패스 (왼쪽으로 밀기)">✕</button>
+    <button class="act skip" id="btnSkip" aria-label="넘기기" title="넘기기 — 이번만 건너뛰기 (새로고침하면 다시 나옴)">↑</button>
+    <button class="act like" id="btnLike" aria-label="찜" title="찜 (오른쪽으로 밀기)">♥</button>
   </div>
 
   <nav class="tabbar">
@@ -77,6 +79,7 @@
   <article class="card">
     <div class="swipe-stamp like-stamp">찜</div>
     <div class="swipe-stamp pass-stamp">패스</div>
+    <div class="swipe-stamp skip-stamp">넘김</div>
     <div class="flip">
       <div class="face front">
         <div class="photo">
@@ -100,7 +103,7 @@
           </div>
           <ul class="spec-line"></ul>
           <ul class="opt-badges"></ul>
-          <p class="hint">탭해서 상세 · 오른쪽 밀면 찜</p>
+          <p class="hint">탭=상세 · ←패스 / ↑넘김 / →찜</p>
         </div>
       </div>
 
@@ -149,6 +152,6 @@
   </article>
 </template>
 
-<script src="app.js?v=20261119c"></script>
+<script src="app.js?v=20261126a"></script>
 </body>
 </html>
