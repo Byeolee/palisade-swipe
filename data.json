@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-11-25T17:39",
+ "generatedAt": "2026-11-26T09:51",
  "source": "구글 시트 \"팰리세이드 HEV 중고 매매 트래커\" + 엔카/케이카 상세 API",
- "count": 44,
+ "count": 45,
  "listings": [
   {
    "id": "43189480",
@@ -48,7 +48,7 @@
     }
    ],
    "change": null,
-   "isNew": true
+   "isNew": false
   },
   {
    "id": "42590738",
@@ -1678,6 +1678,53 @@
     "lastDate": "2026-11-25"
    },
    "isNew": false
+  },
+  {
+   "id": "43234168",
+   "source": "encar",
+   "trim": "캘리그래피",
+   "title": "팰리세이드(LX3) HEV 2.5T 캘리그래피",
+   "drive": "4WD",
+   "seats": "9인승",
+   "sunroof": false,
+   "yearMonth": "25/05",
+   "km": 10555,
+   "color": "흰색",
+   "region": "경기 수원 권선",
+   "price": 5550,
+   "firstPrice": 5550,
+   "registered": "2026-11-26",
+   "status": "판매중",
+   "note": "4WD 캘리그래피, 어라운드뷰·HUD·2열통풍·마사지 O, 선루프·전자서스 X, 1.05만km — 40행(5,590만·25/05·10,136km·선루프+전자서스 O)보다 40만 저렴하나 선루프·전자서스 없음 (11/26 09시 신규 발굴, 최초 광고 11/26 09:14)",
+   "url": "https://fem.encar.com/cars/detail/43234168",
+   "photos": [
+    "https://ci.encar.com/carpicture/carpicture03/pic4323/43234168_001.jpg",
+    "https://ci.encar.com/carpicture/carpicture03/pic4323/43234168_002.jpg",
+    "https://ci.encar.com/carpicture/carpicture03/pic4323/43234168_003.jpg",
+    "https://ci.encar.com/carpicture/carpicture03/pic4323/43234168_004.jpg",
+    "https://ci.encar.com/carpicture/carpicture03/pic4323/43234168_005.jpg"
+   ],
+   "options": {
+    "sunroof": false,
+    "aroundView": true,
+    "hud": true,
+    "ecs": false,
+    "vent2": true,
+    "massage": true
+   },
+   "listPrice": 6414,
+   "registeredAd": "2026-11-26T09:14:30",
+   "dealer": "경기 수원시 권선구 권선로 308-5",
+   "depreciation": 13.5,
+   "priceHistory": [
+    {
+     "date": "2026-11-26",
+     "time": null,
+     "price": 5550
+    }
+   ],
+   "change": null,
+   "isNew": true
   },
   {
    "id": "43187014",
