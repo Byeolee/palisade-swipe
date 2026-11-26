@@ -406,7 +406,11 @@
 
     const TAP_MS = 400;   // 이 시간 안에 손을 떼야 '탭'으로 본다
     const TAP_SLOP = 9;   // 이 거리(px) 이상 움직이면 스크롤·드래그로 본다
-    const SWIPE = 88;     // 이 거리(px)를 넘기면 스와이프 확정 (좌우·위 공통)
+    const MODE_MIN = 14;  // 이만큼 움직인 뒤에야 방향을 판정한다 (엄지 초반 흔들림 흡수)
+    const SWIPE = 88;     // 이 거리(px)를 넘기면 좌우 스와이프 확정
+    const UP = 64;        // 이만큼 위로 올리면 '넘기기' 확정
+    const FLICK_MS = 280; // 이 시간 안에 손을 떼면 '빠른 플릭'으로 본다
+    const FLICK_UP = 38;  // 플릭으로 인정하는 최소 위쪽 이동
 
     const stamps = () => ({
       like: card.querySelector('.like-stamp'),
@@ -463,10 +467,13 @@
       if (!drag.moved && Math.hypot(dx, dy) > 7) drag.moved = true;
       if (!drag.moved) return;
 
-      // 처음 몇 px 움직임으로 방향을 정한다: 위쪽이 우세하면 '넘기기'
+      // 처음 몇 px 움직임으로 방향을 정한다: 위쪽이 우세하면(대각선 오차 허용) '넘기기'
       if (!drag.mode) {
-        if (Math.abs(dy) > 10 && Math.abs(dy) > Math.abs(dx)) drag.mode = dy < 0 ? 'up' : 'down';
-        else if (Math.abs(dx) > 10) drag.mode = 'side';
+        // 14px 남짓 움직이기 전에는 판정하지 않는다. 그 전에 가로로 11px 흔들려도
+        // mode가 'side'로 굳어버리지 않게 하기 위함이다.
+        if (Math.hypot(dx, dy) < MODE_MIN) return;
+        if (dy < 0 && Math.abs(dy) >= Math.abs(dx) * 0.8) drag.mode = 'up';
+        else drag.mode = 'side';
       }
 
       const s = stamps();
@@ -509,7 +516,9 @@
         return;
       }
       if (mode === 'up') {
-        if (dy < -SWIPE) fly(card, 'up', 'skip');
+        // 세로 64px 이상 올렸거나, 짧은 시간에 위로 튕겨 올린 빠른 플릭이면 넘긴다
+        const flick = dt < FLICK_MS && dy < -FLICK_UP && Math.abs(dy) > Math.abs(dx);
+        if (dy < -UP || flick) fly(card, 'up', 'skip');
         else resetCard();
         return;
       }

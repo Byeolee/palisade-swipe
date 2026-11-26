@@ -162,6 +162,9 @@ button, a { font-family: inherit; }
 .card.flipped .flip { transform: rotateY(180deg); }
 /* 뒷면은 세로 스크롤·빈 곳 탭을 받아야 하므로 카드의 touch-action을 풀어 준다 */
 .card.flipped { touch-action: pan-y; cursor: default; }
+/* 앞면은 iOS Safari가 세로 터치를 스크롤로 가로채지 않도록 자식까지 none으로 고정 */
+.card:not(.flipped) .flip,
+.card:not(.flipped) .face.front { touch-action: none; }
 
 .face {
   position: absolute;
