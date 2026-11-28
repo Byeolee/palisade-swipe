@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-11-27T17:56",
+ "generatedAt": "2026-11-28T09:53",
  "source": "구글 시트 \"팰리세이드 HEV 중고 매매 트래커\" + 엔카/케이카 상세 API",
- "count": 46,
+ "count": 45,
  "listings": [
   {
    "id": "43189480",
@@ -2154,71 +2154,6 @@
    "isNew": false
   },
   {
-   "id": "42764891",
-   "source": "encar",
-   "trim": "캘리그래피",
-   "title": "팰리세이드(LX3) HEV 2.5T 캘리그래피",
-   "drive": "4WD",
-   "seats": "9인승",
-   "sunroof": true,
-   "yearMonth": "25/05",
-   "km": 16882,
-   "color": "화이트",
-   "region": "대구",
-   "price": 5630,
-   "firstPrice": 5690,
-   "registered": "2026-11-03",
-   "status": "판매중",
-   "note": "1.6만km 주행, 4륜 캘리그래피 탄탄한 기본기, 선루프·전자제어서스펜션·어라운드뷰·HUD (11/16 선루프 표기 정정) (11/21 09시 5,670만 20만 인하, 기존 5,690만원) (11/23 17시 5,660만 10만 인하, 기존 5,670만원) (11/25 17시 5,630만원 30만 인하, 엔카 수정 11/25 11:31)",
-   "url": "https://fem.encar.com/cars/detail/42764891",
-   "photos": [
-    "https://ci.encar.com/carpicture/carpicture06/pic4276/42764891_001.jpg",
-    "https://ci.encar.com/carpicture/carpicture06/pic4276/42764891_002.jpg",
-    "https://ci.encar.com/carpicture/carpicture06/pic4276/42764891_003.jpg",
-    "https://ci.encar.com/carpicture/carpicture06/pic4276/42764891_004.jpg",
-    "https://ci.encar.com/carpicture/carpicture06/pic4276/42764891_005.jpg"
-   ],
-   "options": {
-    "sunroof": true,
-    "aroundView": true,
-    "hud": true,
-    "ecs": true,
-    "vent2": true,
-    "massage": true
-   },
-   "listPrice": 6414,
-   "registeredAd": "2026-11-21T21:30:36",
-   "dealer": "대구 북구 노원로 115",
-   "depreciation": 12.2,
-   "priceHistory": [
-    {
-     "date": "2026-11-03",
-     "time": null,
-     "price": 5690
-    },
-    {
-     "date": "2026-11-21",
-     "time": null,
-     "price": 5670
-    },
-    {
-     "date": "2026-11-23",
-     "time": null,
-     "price": 5660
-    },
-    {
-     "date": "2026-11-25",
-     "time": null,
-     "price": 5630
-    }
-   ],
-   "change": {
-    "delta": -30,
-    "lastDate": "2026-11-25"
-   },
-   "isNew": false
-  },
-  {
    "id": "43188716",
    "source": "encar",
    "trim": "캘리그래피",
@@ -2266,53 +2201,6 @@
    "isNew": false
   },
   {
-   "id": "42912785",
-   "source": "encar",
-   "trim": "캘리그래피",
-   "title": "팰리세이드(LX3) HEV 2.5T 캘리그래피",
-   "drive": "4WD",
-   "seats": "9인승",
-   "sunroof": true,
-   "yearMonth": "25/06",
-   "km": 21116,
-   "color": "갈색",
-   "region": "경기 수원 권선",
-   "price": 5699,
-   "firstPrice": 5699,
-   "registered": "2026-11-18",
-   "status": "판매중",
-   "note": "풀옵션. 13행(5,720·25/08 21,092km) 대비 21만 저렴. 최초등록 10/14",
-   "url": "https://fem.encar.com/cars/detail/42912785",
-   "photos": [
-    "https://ci.encar.com/carpicture/carpicture08/pic4288/42889287_001.jpg",
-    "https://ci.encar.com/carpicture/carpicture08/pic4288/42889287_002.jpg",
-    "https://ci.encar.com/carpicture/carpicture08/pic4288/42889287_003.jpg",
-    "https://ci.encar.com/carpicture/carpicture08/pic4288/42889287_004.jpg",
-    "https://ci.encar.com/carpicture/carpicture08/pic4288/42889287_005.jpg"
-   ],
-   "options": {
-    "sunroof": true,
-    "aroundView": true,
-    "hud": true,
-    "ecs": true,
-    "vent2": true,
-    "massage": true
-   },
-   "listPrice": 6414,
-   "registeredAd": "2026-10-14T18:15:56",
-   "dealer": "경기 수원시 권선구",
-   "depreciation": 11.1,
-   "priceHistory": [
-    {
-     "date": "2026-11-18",
-     "time": null,
-     "price": 5699
-    }
-   ],
-   "change": null,
-   "isNew": false
-  },
-  {
    "id": "42802409",
    "source": "encar",
    "trim": "캘리그래피",
@@ -2324,11 +2212,11 @@
    "km": 21092,
    "color": "블랙",
    "region": "경기",
-   "price": 5720,
+   "price": 5700,
    "firstPrice": 5750,
    "registered": "2026-11-03",
    "status": "판매중",
-   "note": "2.1만km 주행, 4륜 캘리그래피, 엔카홈서비스, 선루프·전자제어서스펜션·어라운드뷰 (11/14 5,720만 30만 인하, 기존 5,750만원, 11/16 선루프 표기 정정)",
+   "note": "2.1만km 주행, 4륜 캘리그래피, 엔카홈서비스, 선루프·전자제어서스펜션·어라운드뷰 (11/14 5,720만 30만 인하, 기존 5,750만원, 11/16 선루프 표기 정정) (11/28 09시 5,700만원 20만 인하, 엔카 수정 11/27 17:27)",
    "url": "https://fem.encar.com/cars/detail/42802409",
    "photos": [
     "https://ci.encar.com/carpicture/carpicture10/pic4280/42801142_001.jpg",
@@ -2348,7 +2236,7 @@
    "listPrice": 6414,
    "registeredAd": "2026-09-28T16:27:04",
    "dealer": "경기 부천시 원미구 신상로 25",
-   "depreciation": 10.8,
+   "depreciation": 11.1,
    "priceHistory": [
     {
      "date": "2026-11-03",
@@ -2359,11 +2247,16 @@
      "date": "2026-11-14",
      "time": null,
      "price": 5720
+    },
+    {
+     "date": "2026-11-28",
+     "time": null,
+     "price": 5700
     }
    ],
    "change": {
-    "delta": -30,
-    "lastDate": "2026-11-14"
+    "delta": -20,
+    "lastDate": "2026-11-28"
    },
    "isNew": false
   },
@@ -2579,6 +2472,61 @@
     }
    ],
    "change": null,
+   "isNew": false
+  },
+  {
+   "id": "42912785",
+   "source": "encar",
+   "trim": "캘리그래피",
+   "title": "팰리세이드(LX3) HEV 2.5T 캘리그래피",
+   "drive": "4WD",
+   "seats": "9인승",
+   "sunroof": true,
+   "yearMonth": "25/06",
+   "km": 21116,
+   "color": "갈색",
+   "region": "경기 수원 권선",
+   "price": 7000,
+   "firstPrice": 5699,
+   "registered": "2026-11-18",
+   "status": "판매중",
+   "note": "풀옵션. 13행(5,720·25/08 21,092km) 대비 21만 저렴. 최초등록 10/14 (11/28 09시 엔카 상세 '계약중' 확인·표시가 5,699→7,000만 상향(11/27 21:21 수정) — 계약 진행 중 딜러 표시가 상향으로 실제 거래가 아님)",
+   "url": "https://fem.encar.com/cars/detail/42912785",
+   "photos": [
+    "https://ci.encar.com/carpicture/carpicture08/pic4288/42889287_001.jpg",
+    "https://ci.encar.com/carpicture/carpicture08/pic4288/42889287_002.jpg",
+    "https://ci.encar.com/carpicture/carpicture08/pic4288/42889287_003.jpg",
+    "https://ci.encar.com/carpicture/carpicture08/pic4288/42889287_004.jpg",
+    "https://ci.encar.com/carpicture/carpicture08/pic4288/42889287_005.jpg"
+   ],
+   "options": {
+    "sunroof": true,
+    "aroundView": true,
+    "hud": true,
+    "ecs": true,
+    "vent2": true,
+    "massage": true
+   },
+   "listPrice": 6414,
+   "registeredAd": "2026-10-14T18:15:56",
+   "dealer": "경기 수원시 권선구",
+   "depreciation": -9.1,
+   "priceHistory": [
+    {
+     "date": "2026-11-18",
+     "time": null,
+     "price": 5699
+    },
+    {
+     "date": "2026-11-28",
+     "time": null,
+     "price": 7000
+    }
+   ],
+   "change": {
+    "delta": 1301,
+    "lastDate": "2026-11-28"
+   },
    "isNew": false
   }
  ]
