@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-28T09:53",
+ "generatedAt": "2026-11-28T17:47",
  "source": "구글 시트 \"팰리세이드 HEV 중고 매매 트래커\" + 엔카/케이카 상세 API",
  "count": 45,
  "listings": [
@@ -616,7 +616,7 @@
    "firstPrice": 4950,
    "registered": "2026-11-16",
    "status": "판매중",
-   "note": "어라운드뷰·HUD, 선루프·전자서스 없음, 1.8만km (11/16 시트 신규 추가, 11/19 4,950→4,920만 30만 인하, 11/23 23:09 4,890만 30만 추가 인하)",
+   "note": "어라운드뷰·HUD, 선루프·전자서스 없음, 1.8만km (11/16 시트 신규 추가, 11/19 4,950→4,920만 30만 인하, 11/23 23:09 4,890만 30만 추가 인하) (11/28 17시 엔카 목록 '계약중' 확인 — 4,890만원 유지, 계약 진행 중)",
    "url": "https://fem.encar.com/cars/detail/43021134",
    "photos": [
     "https://ci.encar.com/carpicture/carpicture02/pic4302/43020245_001.jpg",
@@ -889,6 +889,58 @@
     "lastDate": "2026-11-20"
    },
    "isNew": false
+  },
+  {
+   "id": "EC61441670",
+   "source": "kcar",
+   "trim": "캘리그래피",
+   "title": "팰리세이드(LX3) HEV 2.5T 캘리그래피",
+   "drive": "2WD",
+   "seats": "9인승",
+   "sunroof": false,
+   "yearMonth": "25/11",
+   "km": 16913,
+   "color": "갈색",
+   "region": "서울 영등포(케이카 홈서비스)",
+   "price": 5050,
+   "firstPrice": 5050,
+   "registered": "2026-11-28",
+   "status": "판매중",
+   "note": "케이카 홈서비스 메가센터 신규 등재(11/28 17시 포착), 어라운드뷰·HUD·2열통풍 O, 선루프·전자서스 X, 25/11식 1.69만km — 카히스토리 자차 1건·대물 0건, 소유자 2명(2025-11-25 서울 강서 신조 → 2026-11-20 영등포 이전), 리콜 0. 2WD 캘리그래피 25/11식 최저가권 — 43행 26/05식 2,079km보다 450만 원 저렴, 17행 25/07식 9,058km보다 120만 원 저렴(연식 4개월 최신)",
+   "url": "https://www.kcar.com/bc/detail/carInfoDtl?i_sCarCd=EC61441670",
+   "photos": [
+    "https://img.kcar.com/3dcarpicture/2026/11/173/61441670_1/main/main780.jpg",
+    "https://img.kcar.com/ucms/202607/RB/RBRST71100M/133207916820260727091548.png",
+    "https://img.kcar.com/ucms/202408/RB/RBRST71100M/84627536820240807163300.png",
+    "https://img.kcar.com/ucms/202407/RB/RBRST71100M/201376106020240711151545.png",
+    "https://img.kcar.com/ucms/202407/RB/RBRST71100M/87293158820240711170455.png"
+   ],
+   "options": {
+    "sunroof": false,
+    "aroundView": true,
+    "hud": true,
+    "ecs": false,
+    "vent2": true,
+    "massage": false
+   },
+   "listPrice": 6186,
+   "dealer": "홈서비스 메가센터",
+   "registeredAd": "20261117",
+   "accident": {
+    "self": "1",
+    "other": "0",
+    "otherAmount": "0"
+   },
+   "depreciation": 18.4,
+   "priceHistory": [
+    {
+     "date": "2026-11-28",
+     "time": null,
+     "price": 5050
+    }
+   ],
+   "change": null,
+   "isNew": true
   },
   {
    "id": "42848583",
@@ -2472,61 +2524,6 @@
     }
    ],
    "change": null,
-   "isNew": false
-  },
-  {
-   "id": "42912785",
-   "source": "encar",
-   "trim": "캘리그래피",
-   "title": "팰리세이드(LX3) HEV 2.5T 캘리그래피",
-   "drive": "4WD",
-   "seats": "9인승",
-   "sunroof": true,
-   "yearMonth": "25/06",
-   "km": 21116,
-   "color": "갈색",
-   "region": "경기 수원 권선",
-   "price": 7000,
-   "firstPrice": 5699,
-   "registered": "2026-11-18",
-   "status": "판매중",
-   "note": "풀옵션. 13행(5,720·25/08 21,092km) 대비 21만 저렴. 최초등록 10/14 (11/28 09시 엔카 상세 '계약중' 확인·표시가 5,699→7,000만 상향(11/27 21:21 수정) — 계약 진행 중 딜러 표시가 상향으로 실제 거래가 아님)",
-   "url": "https://fem.encar.com/cars/detail/42912785",
-   "photos": [
-    "https://ci.encar.com/carpicture/carpicture08/pic4288/42889287_001.jpg",
-    "https://ci.encar.com/carpicture/carpicture08/pic4288/42889287_002.jpg",
-    "https://ci.encar.com/carpicture/carpicture08/pic4288/42889287_003.jpg",
-    "https://ci.encar.com/carpicture/carpicture08/pic4288/42889287_004.jpg",
-    "https://ci.encar.com/carpicture/carpicture08/pic4288/42889287_005.jpg"
-   ],
-   "options": {
-    "sunroof": true,
-    "aroundView": true,
-    "hud": true,
-    "ecs": true,
-    "vent2": true,
-    "massage": true
-   },
-   "listPrice": 6414,
-   "registeredAd": "2026-10-14T18:15:56",
-   "dealer": "경기 수원시 권선구",
-   "depreciation": -9.1,
-   "priceHistory": [
-    {
-     "date": "2026-11-18",
-     "time": null,
-     "price": 5699
-    },
-    {
-     "date": "2026-11-28",
-     "time": null,
-     "price": 7000
-    }
-   ],
-   "change": {
-    "delta": 1301,
-    "lastDate": "2026-11-28"
-   },
    "isNew": false
   }
  ]
